@@ -16,22 +16,14 @@ public class CharacterAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            anim.SetTrigger("walk");
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            anim.SetTrigger("run");
-            return;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            anim.SetTrigger("idle");
-            return;
-        }
+       
 
     }
+    public void SetFloatParameter(string parm, float val)
+    {
+        anim.SetFloat(parm, val);
+
+    }
+
+
 }

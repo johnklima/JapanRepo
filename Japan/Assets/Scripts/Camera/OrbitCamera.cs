@@ -15,7 +15,7 @@ public class OrbitCamera : MonoBehaviour
     [SerializeField] float mouseSensitivity = 5;
     [SerializeField] Vector2 pitchMinMax = new Vector2(-45, 45);
     [SerializeField] float rotationSmoothTime = .12f;
-    [SerializeField] Transform Target;
+
 
     [Header("Cursor Check")]
     [SerializeField] bool lockCursor;

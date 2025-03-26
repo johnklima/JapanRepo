@@ -7,8 +7,7 @@ using UnityEngine;
 namespace player
 {
 
-    [System.Serializable]
-    public class PlayerSheet
+    [System.Serializable] public class PlayerSheet
     {
         public string Name;
         
@@ -259,7 +258,7 @@ namespace player
 
         int randomStat()
         {
-            //6 sided dice, as floats
+            //6 sided dice
             int s = 0;
                 
             s+= Random.Range(1, 7);
