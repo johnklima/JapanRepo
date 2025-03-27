@@ -76,7 +76,11 @@ public class Fight : MonoBehaviour
 
         survivability = player.HitHim - player.ImHit;
         encounters++;
-        
+
+        //copy back the result as evidently it's a reference not a pointer?
+        transform.GetComponent<Player>().playerSheet = player; 
+
+
     }
 
     // Update is called once per frame
