@@ -10,10 +10,6 @@ using UnityEngine;
 
 public class Fight : MonoBehaviour
 {
-
-    
-
-    public Transform enemyTransform;    
     
     
     public PlayerSheet player;
@@ -34,6 +30,7 @@ public class Fight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = transform.GetComponent<Player>().playerSheet;
 
         //just do the first col for now, inverse of D&D armor class (big number is good!)
         resultTable[0, 0] = 1;
@@ -61,9 +58,6 @@ public class Fight : MonoBehaviour
     public void Commence()
     {
         //start with sword to sword
-        enemy = enemyTransform.GetComponent<Player>().playerSheet;
-        player = transform.GetComponent<Player>().playerSheet;
-
 
         //take my stats compare to his
         int needed = resultTable[player.LVL-1, enemy.AC];

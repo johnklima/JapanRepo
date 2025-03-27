@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NarrativeEvent : MonoBehaviour
 {
+
+    public Encounter encounter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +24,9 @@ public class NarrativeEvent : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("trigger " + other.name);
-
+            encounter.addCombatant( other.transform.GetComponent<Fight>() );
         }
+
       
     }
 }
