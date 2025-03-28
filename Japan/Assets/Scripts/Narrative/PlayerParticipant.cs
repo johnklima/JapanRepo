@@ -25,13 +25,20 @@ public class PlayerParticipant : Participant
             
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public override void Commence()
     {
         Debug.Log("PlayerParticipant Commence " + transform.name);
-        PlayerParticipant ppo = (PlayerParticipant) other;
-
+        
+        //I cant just say "other.testValue" as other is just a base participant (puppy, human, etc...)
+        //But what I can do is hard cast to what I might expect, and see if it is one 
+        PlayerParticipant ppo = (PlayerParticipant) others[0];  //TODO: foreach
+        
+        //so if it is one...
         if(ppo)
-            Debug.Log("other.testValue " + ppo.testValue );
+            Debug.Log("   -> other.testValue " + ppo.testValue );
 
         base.Commence();
     }

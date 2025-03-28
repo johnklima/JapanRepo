@@ -5,13 +5,18 @@ using UnityEngine;
 public abstract class Participant : MonoBehaviour
 {
     
-    public Participant other;
+    public List<Participant> others;
     public bool commence = false;
-    public List<BaseInteraction> interactions;
+    public List<BaseInteraction> interactions; //my interactions
 
     public virtual void Commence()
     {
         Debug.Log("Participant Commence" + transform.name);
+
+        foreach (Participant p in others)
+        {
+            Debug.Log("  participant other -> " + p.transform.name);
+        }
 
         foreach(BaseInteraction inter in interactions)
         {

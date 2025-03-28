@@ -1,0 +1,71 @@
+\doxysection{Encounter.\+cs}
+\hypertarget{_encounter_8cs_source}{}\label{_encounter_8cs_source}\index{OD\&D/Encounter.cs@{OD\&D/Encounter.cs}}
+\mbox{\hyperlink{_encounter_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.VisualScripting;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00007}\mbox{\hyperlink{class_encounter}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_encounter}{Encounter}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00010}\mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{fight}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00011}\mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{00011}}\ \ \ \ \ \textcolor{keyword}{public}\ List<Fight>\ \ \mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{combatants}};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00012}\mbox{\hyperlink{class_encounter_a5c008d46fc454022080fd8bd8674a349}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_encounter_a5c008d46fc454022080fd8bd8674a349}{playersNeeded}}\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00013}00013\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ has\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00019}00019\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00021}\mbox{\hyperlink{class_encounter_aa261312b9e0c5a29349c3b6afc0cae8c}{00021}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_encounter_aa261312b9e0c5a29349c3b6afc0cae8c}{addCombatant}}(\mbox{\hyperlink{class_fight}{Fight}}\ \mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{fight}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(has\ <\ \mbox{\hyperlink{class_encounter_a5c008d46fc454022080fd8bd8674a349}{playersNeeded}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{combatants}}.Add(\mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{fight}});}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ has++;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(has\ ==\ \mbox{\hyperlink{class_encounter_a5c008d46fc454022080fd8bd8674a349}{playersNeeded}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fight}{Fight}}[]\ fights\ =\ \mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{combatants}}.ToArray();}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_fight}{Fight}}\ f\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{combatants}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ fights.Length;\ i++)}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(f\ !=\ fights[i]\ \&\&\ fights[i]\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ f.enemy\ =\ fights[i].player;}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fights[i]\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.fight\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00054}00054\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{fight}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{class_fight}{Fight}}\ f\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_encounter_a02dc7472c9709164fbf8ca922a62f45d}{combatants}})}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ f.fight\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_encounter_a44cd6cd0752fd2d036777063108e413b}{fight}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_encounter_8cs_source_l00065}00065\ \}}
+
+\end{DoxyCode}

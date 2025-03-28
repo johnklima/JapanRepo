@@ -34,6 +34,15 @@ public class BaseInteraction : MonoBehaviour
     public virtual void Commence()
     {
         Debug.Log("BaseInteraction Commence " + transform.name);
+        foreach (Participant p in transform.GetComponent<Participant>().others)
+        {
+            Debug.Log("  interactionPARTICIPANT -> other " + p.transform.name);
+
+            foreach(BaseInteraction i in p.interactions)
+            {
+                Debug.Log("     interactionPARTICIPANT -> other -> interactions " + i.transform.name);                
+            }
+        }
     }
 
     // Update is called once per frame

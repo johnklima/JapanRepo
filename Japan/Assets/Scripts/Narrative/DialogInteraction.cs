@@ -7,6 +7,7 @@ public class DialogInteraction : BaseInteraction
     public override void Commence()
     {
         Debug.Log("DialogInteraction Commence " + transform.name);
+        
         base.Commence();
     }
 }

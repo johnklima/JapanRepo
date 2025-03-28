@@ -1,0 +1,39 @@
+\doxysection{Player.\+cs}
+\hypertarget{_player_8cs_source}{}\label{_player_8cs_source}\index{OD\&D/Player.cs@{OD\&D/Player.cs}}
+\mbox{\hyperlink{_player_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespaceplayer}{player}};}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00006}\mbox{\hyperlink{class_player}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00008}\mbox{\hyperlink{class_player_aab9ffe9e430e946b182a9f651bb4ea94}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classplayer_1_1_player_sheet}{PlayerSheet}}\ \mbox{\hyperlink{class_player_aab9ffe9e430e946b182a9f651bb4ea94}{playerSheet}};}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ Awake()}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ Random.InitState(\ (\textcolor{keywordtype}{int})(Time.realtimeSinceStartup\ *\ 100.0f)\ );}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_player_aab9ffe9e430e946b182a9f651bb4ea94}{playerSheet}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classplayer_1_1_player_sheet}{PlayerSheet}}(transform);}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_player_aab9ffe9e430e946b182a9f651bb4ea94}{playerSheet}}.load()\ ==\ \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}save\ new\ player\ sheet"{}});}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_player_aab9ffe9e430e946b182a9f651bb4ea94}{playerSheet}}.save();}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00022}00022\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00026}00026\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00028}00028\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_8cs_source_l00033}00033\ \}}
+
+\end{DoxyCode}

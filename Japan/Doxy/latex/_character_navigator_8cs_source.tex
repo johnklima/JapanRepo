@@ -1,0 +1,42 @@
+\doxysection{Character\+Navigator.\+cs}
+\hypertarget{_character_navigator_8cs_source}{}\label{_character_navigator_8cs_source}\index{Character/CharacterNavigator.cs@{Character/CharacterNavigator.cs}}
+\mbox{\hyperlink{_character_navigator_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine.AI;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00006}\mbox{\hyperlink{class_character_navigator}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character_navigator}{CharacterNavigator}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00009}\mbox{\hyperlink{class_character_navigator_aecc5b87bf96dd5afbf559fb872f9eb41}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ Transform\ \mbox{\hyperlink{class_character_navigator_aecc5b87bf96dd5afbf559fb872f9eb41}{Target}};}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00010}\mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ NavMeshAgent\ \mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{agent}};}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_character_animator}{CharacterAnimator}}\ animate;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00013}\mbox{\hyperlink{class_character_navigator_a739eb01fe4866c6a777d5fae5b6e780f}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_character_navigator_a739eb01fe4866c6a777d5fae5b6e780f}{velo}};}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{agent}}\ =\ transform.GetComponent<NavMeshAgent>();\ \ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ animate\ =\ transform.GetComponent<\mbox{\hyperlink{class_character_animator}{CharacterAnimator}}>();}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00025}00025\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{agent}}.SetDestination(\mbox{\hyperlink{class_character_navigator_aecc5b87bf96dd5afbf559fb872f9eb41}{Target}}.position);}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_character_navigator_a739eb01fe4866c6a777d5fae5b6e780f}{velo}}\ =\ \mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{agent}}.velocity.magnitude;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ max\ =\ \mbox{\hyperlink{class_character_navigator_a4e20bda201dfa9202b160a2ef44f2c65}{agent}}.speed;}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ animate.\mbox{\hyperlink{class_character_animator_a13739ac9902e86ad5aeaa1cf974f51aa}{SetFloatParameter}}(\textcolor{stringliteral}{"{}velocity"{}},\ \mbox{\hyperlink{class_character_navigator_a739eb01fe4866c6a777d5fae5b6e780f}{velo}}\ /\ max);}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_navigator_8cs_source_l00036}00036\ \}}
+
+\end{DoxyCode}

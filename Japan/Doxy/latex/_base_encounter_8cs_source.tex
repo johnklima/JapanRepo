@@ -1,0 +1,75 @@
+\doxysection{Base\+Encounter.\+cs}
+\hypertarget{_base_encounter_8cs_source}{}\label{_base_encounter_8cs_source}\index{Narrative/BaseEncounter.cs@{Narrative/BaseEncounter.cs}}
+\mbox{\hyperlink{_base_encounter_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.VisualScripting;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00008}00008\ \textcolor{comment}{//\ the\ encounter\ is\ the\ type\ of\ thing\ that\ happens\ when\ one\ or\ more}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00009}00009\ \textcolor{comment}{//\ characters\ are\ collected\ in\ from\ an\ event}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00011}\mbox{\hyperlink{class_base_encounter}{00011}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_encounter}{BaseEncounter}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00015}\mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{00015}}\ \ \ \ \ \textcolor{keyword}{public}\ List<Participant>\ \mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{participants}};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00016}\mbox{\hyperlink{class_base_encounter_a3f315cf095f633d8ece7a0ee8a08fbe4}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_base_encounter_a3f315cf095f633d8ece7a0ee8a08fbe4}{participantsNeeded}}\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ has\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00018}\mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{commence}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00020}\mbox{\hyperlink{class_base_encounter_a7f30a72828c8993ec1196277c44b8acb}{00020}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_encounter_a7f30a72828c8993ec1196277c44b8acb}{addParticipant}}(\mbox{\hyperlink{class_participant}{Participant}}\ participant)}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00021}00021\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}adding\ "{}}\ +\ \ participant.transform.name\ );}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(has\ <\ \mbox{\hyperlink{class_base_encounter_a3f315cf095f633d8ece7a0ee8a08fbe4}{participantsNeeded}})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{participants}}.Add(participant);}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ has++;}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(has\ ==\ \mbox{\hyperlink{class_base_encounter_a3f315cf095f633d8ece7a0ee8a08fbe4}{participantsNeeded}})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_participant}{Participant}}[]\ temps\ =\ \mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{participants}}.ToArray();}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_participant}{Participant}}\ p\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{participants}})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ temps.Length;\ i++)}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(p\ !=\ temps[i]\ \&\&\ temps[i]\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//match\ one\ to\ the\ other}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.others.Add\ (temps[i]);\ \ \textcolor{comment}{//add\ first\ or\ add\ all??}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//null\ it}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ temps[i]\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.commence\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00054}00054\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00056}00056\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00058}00058\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{commence}})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{class_participant}{Participant}}\ p\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_base_encounter_a5e7e455fb8354fabf3dd561d5e4ccc55}{participants}})}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.commence\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{commence}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_encounter_8cs_source_l00069}00069\ \}}
+
+\end{DoxyCode}

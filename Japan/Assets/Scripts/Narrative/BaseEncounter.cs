@@ -11,7 +11,6 @@ using UnityEngine;
 public class BaseEncounter : MonoBehaviour
 {
 
-
     public List<Participant> participants;
     public int participantsNeeded = 2;
     private int has = 0;
@@ -36,7 +35,7 @@ public class BaseEncounter : MonoBehaviour
                         if(p != temps[i] && temps[i] != null)
                         {
                             //match one to the other
-                            p.other = temps[i];
+                            p.others.Add (temps[i]);  //add first or add all??
 
                             //null it
                             temps[i] = null;
