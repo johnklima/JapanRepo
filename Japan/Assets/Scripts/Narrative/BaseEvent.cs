@@ -7,16 +7,21 @@ using UnityEngine.UIElements;
 
 public class BaseEvent : MonoBehaviour
 {
-
-    public BaseEncounter encounter;
-     
+    /// <summary>
+    /// list of encounters for this event trigger
+    /// </summary>
+    public List<BaseEncounter> encounters;  
+    /// <summary>
+    /// which encounter
+    /// </summary>
+    int which = 0; 
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
             Debug.Log("BaseEvent trigger " + other.name);
-            encounter.addParticipant( other.transform.GetComponent<Participant>() );
+            encounters[which].addParticipant( other.transform.GetComponent<Participant>() );
         }
 
       
