@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///   <br />
+/// </summary>
 public class DialogInteraction : BaseInteraction
 {
     //interactions all support LUTs
@@ -9,27 +12,28 @@ public class DialogInteraction : BaseInteraction
     private const int rows = 7;     //ME
 
     //this LUT will be an animation LUT based on player to player type
-    /// <summary>
-    ///     ME      ||                                 THEM
-    ///_____________||__________________________________________________________________________________________
-    ///PLAYER TYPE  || Geisha   |   Sensei  |  Ninja   | Sam Grnt  | Sam War   |  Village Man  |  Village Woman
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________
-    ///Geisha       ||  chat    |    bow    |  flirt   |   ignore  |   flirt   |    insult     |    insult
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    ///Sensei       || downlook |   chat    |  insult  |   chat    |   chat    |    bless      |     bless      
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    ///Ninja        ||  flirt   |   agro    |  whisper |   insult  |  ignore   |    whisper    |    whisper
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    ///Sam Grnt     ||  flirt   |   chat    |  whisper |   agro    |   chat    |    insult     |    insult  
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________
-    ///Sam War      ||  flirt   |   chat    |  ignore  |   chat    |   chat    |    insult     |    insult  
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    ///Vil Man      ||  bow     |   bow     |  whisper |   bow     |   bow     |    chat       |    flirt
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    ///Vil Woman    ||  bow     |   bow     |  whisper |   bow     |   bow     |    flirt      |     chat
-    ///_____________||__________|___________|__________|___________|___________|_______________|________________ 
-    /// </summary>
 
+    // ME           ||                                 THEM
+    // _____________||__________________________________________________________________________________________
+    // PLAYER TYPE  || Geisha   |   Sensei  |  Ninja   | Sam Grnt  | Sam War   |  Village Man  |  Village Woman
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Geisha       ||  chat    |    bow    |  flirt   |   ignore  |   flirt   |    insult     |    insult
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Sensei       || downlook |   chat    |  insult  |   chat    |   chat    |    bless      |     bless
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Ninja        ||  flirt   |   agro    |  whisper |   insult  |  ignore   |    whisper    |    whisper
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Sam Grnt     ||  flirt   |   chat    |  whisper |   agro    |   chat    |    insult     |    insult
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Sam War      ||  flirt   |   chat    |  ignore  |   chat    |   chat    |    insult     |    insult
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Vil Man      ||  bow     |   bow     |  whisper |   bow     |   bow     |    chat       |    flirt
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+    // Vil Woman    ||  bow     |   bow     |  whisper |   bow     |   bow     |    flirt      |     chat
+    // _____________||__________|___________|__________|___________|___________|_______________|________________
+
+
+    /// <summary>The anim names</summary>
     public string[] animNames = new string[] 
     {   "chat"      , 
         "bow"       , 
@@ -42,29 +46,15 @@ public class DialogInteraction : BaseInteraction
         "ignore"
     };
 
-    /// 
-    /// <summary>
-    /// Geisha          0
-    /// Ninja           1
-    /// Grunt           2
-    /// Warrior         3
-    /// Sensei          4
-    /// Village Man     5
-    /// Village Woman   6
-    /// </summary>
-
-
-    /// <summary>
-    /// 0   chat
-    /// 1   bow
-    /// 2   flirt
-    /// 3   insult
-    /// 4   bless
-    /// 5   whisper
-    /// 6   agro
-    /// 7   downlook
-    /// 8   ignore
-    /// </summary>
+    
+    // Geisha          0
+    // Ninja           1
+    // Grunt           2
+    // Warrior         3
+    // Sensei          4
+    // Village Man     5
+    // Village Woman   6
+   
     private void Start()
     {
         resultTable = new int[rows, cols];
@@ -138,6 +128,7 @@ public class DialogInteraction : BaseInteraction
 
     }
 
+    /// <summary>Commences this instance.</summary>
     public override void Commence()
     {
         Debug.Log("DialogInteraction Commence " + transform.name);
