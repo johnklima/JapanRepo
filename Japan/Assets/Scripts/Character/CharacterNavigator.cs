@@ -8,6 +8,8 @@ public class CharacterNavigator : MonoBehaviour
 
     public Transform Target;
     public NavMeshAgent agent;
+    public Transform LookAtTarget;
+
     CharacterAnimator animate;
 
     public float velo;
@@ -17,19 +19,44 @@ public class CharacterNavigator : MonoBehaviour
     {
         agent = transform.GetComponent<NavMeshAgent>();  
         animate = transform.GetComponent<CharacterAnimator>();
+        agent.SetDestination(Target.position);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        agent.SetDestination(Target.position);
+        if (agent.remainingDistance > 1.0f)
+        {
+            agent.isStopped = false;
+            agent.SetDestination(Target.position);
+        }            
+        else
+        {
+            agent.isStopped = true;
+        }
+            
+
 
         velo = agent.velocity.magnitude;
         float max = agent.speed;
 
         animate.SetFloatParameter("velocity", velo / max);
+
+
+        //generic way to handle lookat, once at destination, regardless of other states (dialog, etc..)
+        if (LookAtTarget && agent.isStopped)
+        {
+            //simple slerp a facing
+            Vector3 tpos = LookAtTarget.position;
+            Quaternion rot = transform.rotation;
+            transform.LookAt(tpos);
+            Quaternion rot2 = transform.rotation;
+            transform.rotation = Quaternion.Slerp(rot, rot2, Time.deltaTime * 6.0f); //make it quick
+
+
+        }
+            
 
 
     }

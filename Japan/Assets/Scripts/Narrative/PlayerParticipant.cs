@@ -25,13 +25,26 @@ public class PlayerParticipant : Participant
             
     }
 
+
+
+
     /// <summary>
     /// 
     /// </summary>
     public override void Commence()
     {
-        Debug.Log("PlayerParticipant Commence " + transform.name);
-        
+
+        Debug.Log(this.GetType() + " Participant Commence" + transform.name);
+
+        foreach (Participant p in others)
+        {
+            Debug.Log("  participant other -> " + p.transform.name);
+        }
+
+        Debug.Log(this.GetType() + " Participant Commence " + transform.name + " " + others[0].GetType());
+
+        transform.GetComponent<CharacterNavigator>().LookAtTarget = others[0].transform;
+
         //I cant just say "other.testValue" as other is just a base participant (puppy, human, etc...)
         //But what I can do is hard cast to what I might expect, and see if it is one 
         PlayerParticipant ppo = (PlayerParticipant) others[0];  //TODO: foreach
@@ -40,6 +53,6 @@ public class PlayerParticipant : Participant
         if(ppo)
             Debug.Log("   -> other.testValue " + ppo.testValue );
 
-        base.Commence();
+        
     }
 }

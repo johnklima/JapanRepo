@@ -48,21 +48,7 @@ public class BaseEncounter : MonoBehaviour
         
         }
 
-
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       if(commence)
-       {
-            foreach(Participant p in participants)
-            {
-                p.commence = true;
-            }
 
-            commence = false;
-       }
-    }
 }
