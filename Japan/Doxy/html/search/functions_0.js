@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['commence_0',['Commence',['../class_dialog_interaction.html#a300d0f92fb488ef9537ea2dfc9c49631',1,'DialogInteraction']]]
+  ['addparticipant_0',['addParticipant',['../class_base_encounter.html#a7f30a72828c8993ec1196277c44b8acb',1,'BaseEncounter']]]
 ];

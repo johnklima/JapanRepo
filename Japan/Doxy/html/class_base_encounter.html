@@ -109,12 +109,15 @@ $(function(){initNavTree('class_base_encounter.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">BaseEncounter Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>From which all encounters inherit.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for BaseEncounter:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_base_encounter__inherit__graph.png" border="0" usemap="#a_base_encounter_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_base_encounter_inherit__map" id="a_base_encounter_inherit__map">
-<area shape="rect" title=" " alt="" coords="9,80,119,107"/>
+<area shape="rect" title="From which all encounters inherit." alt="" coords="9,80,119,107"/>
 <area shape="rect" href="class_dialog_encounter.html" title=" " alt="" coords="5,155,123,181"/>
 <area shape="poly" title=" " alt="" coords="67,122,67,154,61,154,61,122"/>
 <area shape="rect" title=" " alt="" coords="8,5,120,32"/>
@@ -126,7 +129,7 @@ Collaboration diagram for BaseEncounter:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_base_encounter__coll__graph.png" border="0" usemap="#a_base_encounter_coll__map" alt="Collaboration graph"/></div>
 <map name="a_base_encounter_coll__map" id="a_base_encounter_coll__map">
-<area shape="rect" title=" " alt="" coords="6,80,116,107"/>
+<area shape="rect" title="From which all encounters inherit." alt="" coords="6,80,116,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,117,32"/>
 <area shape="poly" title=" " alt="" coords="64,48,64,80,58,80,58,48"/>
 </map>
@@ -134,24 +137,55 @@ Collaboration diagram for BaseEncounter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f30a72828c8993ec1196277c44b8acb" id="r_a7f30a72828c8993ec1196277c44b8acb"><td class="memItemLeft" align="right" valign="top"><a id="a7f30a72828c8993ec1196277c44b8acb" name="a7f30a72828c8993ec1196277c44b8acb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addParticipant</b> (<a class="el" href="class_participant.html">Participant</a> participant)</td></tr>
+<tr class="memitem:a7f30a72828c8993ec1196277c44b8acb" id="r_a7f30a72828c8993ec1196277c44b8acb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f30a72828c8993ec1196277c44b8acb">addParticipant</a> (<a class="el" href="class_participant.html">Participant</a> participant)</td></tr>
+<tr class="memdesc:a7f30a72828c8993ec1196277c44b8acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a participant. Potentially one of many.  <br /></td></tr>
 <tr class="separator:a7f30a72828c8993ec1196277c44b8acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5e7e455fb8354fabf3dd561d5e4ccc55" id="r_a5e7e455fb8354fabf3dd561d5e4ccc55"><td class="memItemLeft" align="right" valign="top"><a id="a5e7e455fb8354fabf3dd561d5e4ccc55" name="a5e7e455fb8354fabf3dd561d5e4ccc55"></a>
 List&lt; <a class="el" href="class_participant.html">Participant</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>participants</b></td></tr>
+<tr class="memdesc:a5e7e455fb8354fabf3dd561d5e4ccc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The participants. <br /></td></tr>
 <tr class="separator:a5e7e455fb8354fabf3dd561d5e4ccc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f315cf095f633d8ece7a0ee8a08fbe4" id="r_a3f315cf095f633d8ece7a0ee8a08fbe4"><td class="memItemLeft" align="right" valign="top"><a id="a3f315cf095f633d8ece7a0ee8a08fbe4" name="a3f315cf095f633d8ece7a0ee8a08fbe4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>participantsNeeded</b> = 2</td></tr>
+<tr class="memdesc:a3f315cf095f633d8ece7a0ee8a08fbe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">how many participants to fire the encounter <br /></td></tr>
 <tr class="separator:a3f315cf095f633d8ece7a0ee8a08fbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a9ae2ad7dbdde075701b70c5955eb7" id="r_a73a9ae2ad7dbdde075701b70c5955eb7"><td class="memItemLeft" align="right" valign="top"><a id="a73a9ae2ad7dbdde075701b70c5955eb7" name="a73a9ae2ad7dbdde075701b70c5955eb7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>commence</b> = false</td></tr>
+<tr class="memdesc:a73a9ae2ad7dbdde075701b70c5955eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">do it <br /></td></tr>
 <tr class="separator:a73a9ae2ad7dbdde075701b70c5955eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>From which all encounters inherit. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7f30a72828c8993ec1196277c44b8acb" name="a7f30a72828c8993ec1196277c44b8acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f30a72828c8993ec1196277c44b8acb">&#9670;&#160;</a></span>addParticipant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseEncounter.addParticipant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_participant.html">Participant</a></td>          <td class="paramname"><span class="paramname"><em>participant</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a participant. Potentially one of many. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">participant</td><td>The participant.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Japan/Assets/Scripts/Narrative/<b>BaseEncounter.cs</b></li>
+<li>C:/JapanRepo/Japan/Assets/Scripts/Narrative/<b>BaseEncounter.cs</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

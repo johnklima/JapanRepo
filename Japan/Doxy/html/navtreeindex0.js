@@ -2,6 +2,10 @@ var NAVTREEINDEX0 =
 {
 "annotated.html":[1,0],
 "class_base_encounter.html":[1,0,1],
+"class_base_encounter.html#a3f315cf095f633d8ece7a0ee8a08fbe4":[1,0,1,3],
+"class_base_encounter.html#a5e7e455fb8354fabf3dd561d5e4ccc55":[1,0,1,2],
+"class_base_encounter.html#a73a9ae2ad7dbdde075701b70c5955eb7":[1,0,1,1],
+"class_base_encounter.html#a7f30a72828c8993ec1196277c44b8acb":[1,0,1,0],
 "class_base_event.html":[1,0,2],
 "class_base_event.html#a3cd59e53317d2ee30946c7582b50ed2c":[1,0,2,0],
 "class_base_interaction.html":[1,0,3],
@@ -12,6 +16,7 @@ var NAVTREEINDEX0 =
 "class_dialog_event.html":[1,0,8],
 "class_dialog_interaction.html":[1,0,9],
 "class_dialog_interaction.html#a300d0f92fb488ef9537ea2dfc9c49631":[1,0,9,0],
+"class_dialog_interaction.html#ae8d9dcd32f751359ffc6b0ad671b04a9":[1,0,9,1],
 "class_doppleganger.html":[1,0,10],
 "class_encounter.html":[1,0,11],
 "class_fight.html":[1,0,12],

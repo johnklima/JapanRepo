@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['narrativeevent_0',['NarrativeEvent',['../class_narrative_event.html',1,'']]]
+  ['fight_0',['Fight',['../class_fight.html',1,'']]],
+  ['followcamera_1',['FollowCamera',['../class_follow_camera.html',1,'']]]
 ];

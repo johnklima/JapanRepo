@@ -3,7 +3,7 @@ var annotated_dup =
     [ "player", "namespaceplayer.html", [
       [ "PlayerSheet", "classplayer_1_1_player_sheet.html", null ]
     ] ],
-    [ "BaseEncounter", "class_base_encounter.html", null ],
+    [ "BaseEncounter", "class_base_encounter.html", "class_base_encounter" ],
     [ "BaseEvent", "class_base_event.html", "class_base_event" ],
     [ "BaseInteraction", "class_base_interaction.html", null ],
     [ "CharacterAnimator", "class_character_animator.html", null ],

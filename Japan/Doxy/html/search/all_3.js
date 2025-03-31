@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['encounter_0',['Encounter',['../class_encounter.html',1,'']]],
-  ['encounters_1',['encounters',['../class_base_event.html#a3cd59e53317d2ee30946c7582b50ed2c',1,'BaseEvent']]]
+  ['dialogencounter_0',['DialogEncounter',['../class_dialog_encounter.html',1,'']]],
+  ['dialogevent_1',['DialogEvent',['../class_dialog_event.html',1,'']]],
+  ['dialoginteraction_2',['DialogInteraction',['../class_dialog_interaction.html',1,'']]],
+  ['doppleganger_3',['Doppleganger',['../class_doppleganger.html',1,'']]]
 ];
