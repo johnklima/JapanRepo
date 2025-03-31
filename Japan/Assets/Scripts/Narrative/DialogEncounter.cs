@@ -17,7 +17,7 @@ public class DialogEncounter : BaseEncounter
         {
             foreach (Participant p in participants)
             {
-                //face each p to the center of the encounter BY DEFAULT
+                //face each p to the center of the encounter BY DEFAULT if there is nothing better to look at
                 p.transform.GetComponent<CharacterNavigator>().LookAtTarget = transform;
 
                 p.commence = true;
