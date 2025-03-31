@@ -11,6 +11,9 @@ public class DialogInteraction : BaseInteraction
     private const int cols = 7;     //THEM
     private const int rows = 7;     //ME
 
+
+    
+
     //this LUT will be an animation LUT based on player to player type
 
     // ME           ||                                 THEM
@@ -34,7 +37,7 @@ public class DialogInteraction : BaseInteraction
 
 
     /// <summary>The anim names</summary>
-    public string[] animNames = new string[] 
+    public string[] animParamNames = new string[] 
     {   "chat"      , 
         "bow"       , 
         "flirt"     , 
@@ -122,25 +125,33 @@ public class DialogInteraction : BaseInteraction
         resultTable[6, 5] = 2;
         resultTable[6, 6] = 0;
 
-
-
-
-
     }
 
     /// <summary>Commences this instance.</summary>
     public override void Commence()
     {
+        int me = transform.GetComponent<Person>().typeOfPerson;
+        int they = 0;
+
         Debug.Log("DialogInteraction Commence " + transform.name);
         foreach (Participant p in transform.GetComponent<Participant>().others)
         {
             Debug.Log(this.name + " interaction PARTICIPANT -> other " + p.transform.name);
-
-            foreach (BaseInteraction i in p.interactions)
-            {
-                Debug.Log(" interaction PARTICIPANT -> other -> interactions " + i.transform.name);
-            }
+            they = p.transform.GetComponent<Person>().typeOfPerson;
         }
+
+        int result = resultTable[me, they];
+        Debug.Log("PLAY " + animParamNames[result]);
+        transform.GetComponent<Animator>().SetTrigger(animParamNames[result]);
     }
 
+    private void Update()
+    {
+        if (commence)
+        {
+            Commence();
+            commence = false;
+        }
+            
+    }
 }
