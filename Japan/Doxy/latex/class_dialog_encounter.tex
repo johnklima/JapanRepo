@@ -2,7 +2,13 @@
 \hypertarget{class_dialog_encounter}{}\label{class_dialog_encounter}\index{DialogEncounter@{DialogEncounter}}
 
 
-Inheritance diagram for Dialog\+Encounter\+:\nopagebreak
+Handles each Participant in an \doxylink{class_encounter}{Encounter}.  
+
+
+
+
+Inheritance diagram for Dialog\+Encounter\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +17,8 @@ Inheritance diagram for Dialog\+Encounter\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Dialog\+Encounter\+:\nopagebreak
+Collaboration diagram for Dialog\+Encounter\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,18 +29,21 @@ Collaboration diagram for Dialog\+Encounter\+:\nopagebreak
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_encounter}{Base\+Encounter}}}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_base_encounter_a7f30a72828c8993ec1196277c44b8acb}{add\+Participant}} (\mbox{\hyperlink{class_participant}{Participant}} participant)
+void \mbox{\hyperlink{class_base_encounter_a76751eaf45b8218c4c1ea2de17fa9ba1}{add\+Participant}} (\mbox{\hyperlink{class_base_participant}{Base\+Participant}} participant)
 \begin{DoxyCompactList}\small\item\em Adds a participant. Potentially one of many. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_base_encounter}{Base\+Encounter}}}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ \mbox{\hyperlink{class_participant}{Participant}} $>$ {\bfseries participants}
+List$<$ \mbox{\hyperlink{class_base_participant}{Base\+Participant}} $>$ {\bfseries participants}
 \begin{DoxyCompactList}\small\item\em The participants. \end{DoxyCompactList}\item 
 int {\bfseries participants\+Needed} = 2
 \begin{DoxyCompactList}\small\item\em how many participants to fire the encounter \end{DoxyCompactList}\item 
 bool {\bfseries commence} = false
 \begin{DoxyCompactList}\small\item\em do it \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Handles each Participant in an \doxylink{class_encounter}{Encounter}. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

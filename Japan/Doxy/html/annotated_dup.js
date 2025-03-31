@@ -5,7 +5,8 @@ var annotated_dup =
     ] ],
     [ "BaseEncounter", "class_base_encounter.html", "class_base_encounter" ],
     [ "BaseEvent", "class_base_event.html", "class_base_event" ],
-    [ "BaseInteraction", "class_base_interaction.html", null ],
+    [ "BaseInteraction", "class_base_interaction.html", "class_base_interaction" ],
+    [ "BaseParticipant", "class_base_participant.html", "class_base_participant" ],
     [ "CharacterAnimator", "class_character_animator.html", null ],
     [ "CharacterNavigator", "class_character_navigator.html", null ],
     [ "CV", "class_c_v.html", null ],
@@ -18,7 +19,6 @@ var annotated_dup =
     [ "FollowCamera", "class_follow_camera.html", null ],
     [ "NarrativeEvent", "class_narrative_event.html", null ],
     [ "OrbitCamera", "class_orbit_camera.html", null ],
-    [ "Participant", "class_participant.html", null ],
     [ "Person", "class_person.html", null ],
     [ "Player", "class_player.html", null ],
     [ "PlayerParticipant", "class_player_participant.html", null ]

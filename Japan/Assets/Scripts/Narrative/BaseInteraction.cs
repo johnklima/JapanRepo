@@ -4,28 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//this goes on a player, concrete type being what is processed
-
-
+/// <summary>
+/// this goes on a player, concrete type being what is processed
+/// </summary>
 public abstract class BaseInteraction : MonoBehaviour
 {
-
-
-    //just a datatype for now in col,row order
+    /// <summary>
+    /// just a 2d array of ints, LUT 
+    /// </summary>
     public int[,] resultTable;
 
     public bool commence = false;
 
     public abstract void Commence();
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(commence)
-        {
-            Commence();
-            commence = false;
-        }
-            
-    }
 }

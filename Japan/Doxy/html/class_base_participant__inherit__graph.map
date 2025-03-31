@@ -1,0 +1,7 @@
+<map id="BaseParticipant" name="BaseParticipant">
+<area shape="rect" id="Node000001" title="Abstract participant class." alt="" coords="9,80,122,107"/>
+<area shape="rect" id="Node000003" href="$class_player_participant.html" title=" " alt="" coords="5,155,126,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="68,122,68,154,63,154,63,122"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,5,121,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,80,63,80,63,48"/>
+</map>

@@ -134,7 +134,7 @@ public class DialogInteraction : BaseInteraction
         int they = 0;
 
         Debug.Log("DialogInteraction Commence " + transform.name);
-        foreach (Participant p in transform.GetComponent<Participant>().others)
+        foreach (BaseParticipant p in transform.GetComponent<BaseParticipant>().others)
         {
             Debug.Log(this.name + " interaction PARTICIPANT -> other " + p.transform.name);
             they = p.transform.GetComponent<Person>().typeOfPerson;

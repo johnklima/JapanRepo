@@ -2,7 +2,13 @@
 \hypertarget{class_participant}{}\label{class_participant}\index{Participant@{Participant}}
 
 
-Inheritance diagram for Participant\+:\nopagebreak
+Abstract participant class.  
+
+
+
+
+Inheritance diagram for Participant\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +17,8 @@ Inheritance diagram for Participant\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Participant\+:\nopagebreak
+Collaboration diagram for Participant\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,20 +30,23 @@ Collaboration diagram for Participant\+:\nopagebreak
 \item 
 \Hypertarget{class_participant_a38156072deba068f4553630e3ca568ab}\label{class_participant_a38156072deba068f4553630e3ca568ab} 
 void {\bfseries Commence} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Commences interactions for this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_participant_aa805355f2251bbbd5330ec38c00012f5}\label{class_participant_aa805355f2251bbbd5330ec38c00012f5} 
 List$<$ \mbox{\hyperlink{class_participant}{Participant}} $>$ {\bfseries others}
-\item 
-\Hypertarget{class_participant_afdf3e52328b1d64fa01696573110a9c8}\label{class_participant_afdf3e52328b1d64fa01696573110a9c8} 
-bool {\bfseries commence} = false
-\item 
+\begin{DoxyCompactList}\small\item\em The other (base) participants in the encounter. \end{DoxyCompactList}\item 
 \Hypertarget{class_participant_ab25e9a55ab3fddece1c329d88fb3a040}\label{class_participant_ab25e9a55ab3fddece1c329d88fb3a040} 
 List$<$ \mbox{\hyperlink{class_base_interaction}{Base\+Interaction}} $>$ {\bfseries interactions}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em my interactions in the encounter \end{DoxyCompactList}\item 
+\Hypertarget{class_participant_afdf3e52328b1d64fa01696573110a9c8}\label{class_participant_afdf3e52328b1d64fa01696573110a9c8} 
+bool {\bfseries commence} = false
+\begin{DoxyCompactList}\small\item\em do it \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Abstract participant class. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

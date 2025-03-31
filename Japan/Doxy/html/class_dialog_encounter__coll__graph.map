@@ -1,6 +1,6 @@
 <map id="DialogEncounter" name="DialogEncounter">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,123,181"/>
-<area shape="rect" id="Node000002" href="$class_base_encounter.html" title="From which all encounters inherit." alt="" coords="9,80,119,107"/>
+<area shape="rect" id="Node000001" title="Handles each Participant in an Encounter." alt="" coords="5,155,123,181"/>
+<area shape="rect" id="Node000002" href="$class_base_encounter.html" title="the encounter is the type of thing that happens when one or more characters are collected in from an ..." alt="" coords="9,80,119,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,122,67,154,61,154,61,122"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="8,5,120,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,48,67,80,61,80,61,48"/>

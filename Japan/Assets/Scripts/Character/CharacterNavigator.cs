@@ -43,7 +43,6 @@ public class CharacterNavigator : MonoBehaviour
 
         animate.SetFloatParameter("velocity", velo / max);
 
-
         //generic way to handle lookat, once at destination, regardless of other states (dialog, etc..)
         if (LookAtTarget && agent.isStopped)
         {

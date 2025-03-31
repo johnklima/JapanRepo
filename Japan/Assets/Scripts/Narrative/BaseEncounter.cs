@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// the encounter is the type of thing that happens when one or more
-// characters are collected in from an event
-
 /// <summary>
-///   From which all encounters inherit
+///the encounter is the type of thing that happens when one or more
+/// characters are collected in from an event
 /// </summary>
 public class BaseEncounter : MonoBehaviour
 {
 
     /// <summary>The participants</summary>
-    public List<Participant> participants;
+    public List<BaseParticipant> participants;
     /// <summary>how many participants to fire the encounter</summary>
     public int participantsNeeded = 2;
     /// <summary> do it </summary>
@@ -24,7 +22,7 @@ public class BaseEncounter : MonoBehaviour
 
     /// <summary>Adds a participant. Potentially one of many </summary>
     /// <param name="participant">The participant.</param>
-    public void addParticipant(Participant participant)
+    public void addParticipant(BaseParticipant participant)
     {
         Debug.Log("adding " +  participant.transform.name );
 
@@ -36,8 +34,8 @@ public class BaseEncounter : MonoBehaviour
             //for now I'm looking at just 2 participants, but in the end will want many more
             if(has == participantsNeeded)
             {
-                Participant[] temps = participants.ToArray();
-                foreach (Participant p in participants)
+                BaseParticipant[] temps = participants.ToArray();
+                foreach (BaseParticipant p in participants)
                 {
                     for (int i = 0; i < temps.Length; i++)
                     {

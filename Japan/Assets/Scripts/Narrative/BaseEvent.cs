@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-// the event is the unit that collects participants for the encounter
-
+/// <summary>
+///the event is the unit that collects participants for the encounter.  
+///by default, it is a volume trigger - overridable
+/// </summary>
 public class BaseEvent : MonoBehaviour
 {
     /// <summary>
@@ -21,7 +23,7 @@ public class BaseEvent : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("BaseEvent trigger " + other.name);
-            encounters[which].addParticipant( other.transform.GetComponent<Participant>() );
+            encounters[which].addParticipant( other.transform.GetComponent<BaseParticipant>() );
         }
 
       

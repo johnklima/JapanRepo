@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles each Participant in an Encounter
+/// </summary>
 public class DialogEncounter : BaseEncounter
 {
     // Start is called before the first frame update
@@ -15,7 +18,7 @@ public class DialogEncounter : BaseEncounter
     {
         if (commence)
         {
-            foreach (Participant p in participants)
+            foreach (BaseParticipant p in participants)
             {
                 //face each p to the center of the encounter BY DEFAULT if there is nothing better to look at
                 p.transform.GetComponent<CharacterNavigator>().LookAtTarget = transform;
