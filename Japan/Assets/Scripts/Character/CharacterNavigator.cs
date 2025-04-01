@@ -19,7 +19,7 @@ public class CharacterNavigator : MonoBehaviour
     {
         agent = transform.GetComponent<NavMeshAgent>();  
         animate = transform.GetComponent<CharacterAnimator>();
-        agent.SetDestination(Target.position);
+        agent.SetDestination(Target.position);      
 
     }
 
@@ -30,7 +30,12 @@ public class CharacterNavigator : MonoBehaviour
         {
             agent.isStopped = false;
             agent.SetDestination(Target.position);
-        }            
+        }  
+        else if(Vector3.Distance(Target.position,transform.position) > 1.0f )
+        {
+            agent.isStopped = false;
+            agent.SetDestination(Target.position);
+        }
         else
         {
             agent.isStopped = true;

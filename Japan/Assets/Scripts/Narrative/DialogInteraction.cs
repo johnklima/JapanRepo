@@ -11,8 +11,7 @@ public class DialogInteraction : BaseInteraction
     private const int cols = 7;     //THEM
     private const int rows = 7;     //ME
 
-
-    
+       
 
     //this LUT will be an animation LUT based on player to player type
 
@@ -63,15 +62,15 @@ public class DialogInteraction : BaseInteraction
         resultTable = new int[rows, cols];
 
         //Geisha
-        resultTable[0, 0] = 0;
-        resultTable[0, 1] = 1;
+        resultTable[0, 0] = 0;      //Geisha
+        resultTable[0, 1] = 1;      //Ninja
         resultTable[0, 2] = 2;
         resultTable[0, 3] = 8;
         resultTable[0, 4] = 2;
         resultTable[0, 5] = 3;
         resultTable[0, 6] = 3;
 
-        //Sensei
+        //Ninja
         resultTable[1, 0] = 7;
         resultTable[1, 1] = 0;
         resultTable[1, 2] = 3;
@@ -80,7 +79,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[1, 5] = 4;
         resultTable[1, 6] = 4;
 
-        //Ninja
+        //Grunt
         resultTable[2, 0] = 2;
         resultTable[2, 1] = 6;
         resultTable[2, 2] = 5;
@@ -89,7 +88,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[2, 5] = 5;
         resultTable[2, 6] = 5;
 
-        //Sam Grnt
+        //warrior
         resultTable[3, 0] = 2;
         resultTable[3, 1] = 0;
         resultTable[3, 2] = 5;
@@ -98,7 +97,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[3, 5] = 3;
         resultTable[3, 6] = 3;
 
-        //Sam War
+        //Sensei
         resultTable[4, 0] = 2;
         resultTable[4, 1] = 0;
         resultTable[4, 2] = 8;
