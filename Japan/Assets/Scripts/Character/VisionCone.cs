@@ -48,14 +48,14 @@ public class VisionCone : MonoBehaviour
                    
                     Debug.Log("he ray sees " + hit.transform.name);
                     nav.agent.isStopped = true;
-                    nav.Target = nav.transform;
+                    nav.Target = nav.transform; //set my goal object to me (the cone parent)
                 }
             }
             else
             {
                 Debug.Log("he no longer ray sees " + other.name);
                 nav.agent.isStopped = true;
-                nav.Target = nav.transform;
+                nav.Target = nav.transform; //set my goal object to me (the cone parent)
             }
         }
     }
