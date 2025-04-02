@@ -13,6 +13,7 @@ public class CharacterNavigator : MonoBehaviour
     CharacterAnimator animate;
 
     public float velo;
+    public float maxSpeed = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,9 +45,9 @@ public class CharacterNavigator : MonoBehaviour
 
 
         velo = agent.velocity.magnitude;
-        float max = agent.speed;
+        
 
-        animate.SetFloatParameter("velocity", velo / max);
+        animate.SetFloatParameter("velocity", velo / maxSpeed);
 
         //generic way to handle lookat, once at destination, regardless of other states (dialog, etc..)
         if (LookAtTarget && agent.isStopped)

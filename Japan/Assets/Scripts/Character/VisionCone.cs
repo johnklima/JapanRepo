@@ -6,6 +6,8 @@ public class VisionCone : MonoBehaviour
 {
     CharacterNavigator nav;
 
+    public Transform Target;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +22,13 @@ public class VisionCone : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Animal" && other.transform != transform.parent) 
+        if (other.transform == Target)    //set from encounter (usually) 
         {
-            Debug.Log("thinks he sees " + other.name); 
+            Debug.Log("thinks s/he sees " + other.name); 
 
             RaycastHit hit;
-            Vector3 pos = transform.parent.position + Vector3.up;           //parent of the ray cone
-            Vector3 dir = (other.transform.position + Vector3.up) - pos;    //direction to seek target
+            Vector3 pos = transform.parent.position + Vector3.up;  //parent of the ray cone
+            Vector3 dir = (Target.position + Vector3.up) - pos;    //direction to seek target
 
             dir.Normalize();
 
@@ -34,26 +36,26 @@ public class VisionCone : MonoBehaviour
             if ( Physics.Raycast(pos, dir, out hit, 100.0f) )
             {
                 Debug.DrawRay(pos, dir * hit.distance, Color.yellow);
-                Debug.Log("hits " + other.name);
+                Debug.Log("hits " + Target.name);
 
-                if (hit.transform == other.transform)
+                if (hit.transform == Target)
                 {
-                    Debug.Log("he actually ray sees " + other.name);
+                    Debug.Log("s/he actually ray sees " + Target.name);
                    
-                    nav.Target = other.transform;
+                    nav.Target = Target;
                     nav.agent.isStopped = false;
                 }
                 else
                 {
                    
-                    Debug.Log("he ray sees " + hit.transform.name);
+                    Debug.Log("s/he ray sees " + hit.transform.name);
                     nav.agent.isStopped = true;
                     nav.Target = nav.transform; //set my goal object to me (the cone parent)
                 }
             }
-            else
+            else  //hits nothing
             {
-                Debug.Log("he no longer ray sees " + other.name);
+                Debug.Log("s/he no longer ray sees " + Target.name);
                 nav.agent.isStopped = true;
                 nav.Target = nav.transform; //set my goal object to me (the cone parent)
             }
@@ -62,11 +64,11 @@ public class VisionCone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Animal" && other.transform != transform.parent)
+        if (other.transform == Target)
         {
             Debug.Log("he no longer cones sees " + other.name);
             nav.agent.isStopped = true;
-            nav.agent.SetDestination(nav.transform.position);
+            nav.Target = nav.transform;
 
         }
 

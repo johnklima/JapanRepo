@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Dog : Animal
 {
-      
+
+    public VisionCone vizcone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +25,9 @@ public class Dog : Animal
             if(cat)
             {
                 Debug.Log("Dog chases cat");
-                //CharacterNavigator nav = transform.GetComponent<CharacterNavigator>();
-                //nav.Target = cat.transform;
+
+                vizcone.Target = cat.transform;
+
             }
 
 
