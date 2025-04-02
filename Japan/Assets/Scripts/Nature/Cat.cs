@@ -22,12 +22,29 @@ public class Cat : Animal
             if (dog)
             {
                 Debug.Log("Cat runs away");
-                Vector3 pos;
+                
                 CharacterNavigator nav = transform.GetComponent<CharacterNavigator>();
 
                 Transform places = GameObject.Find("HiddingPlaces").transform;
 
-                nav.Target.position = places.GetChild(0).position;
+                //find nearest hiding place 
+                float EPSILON = 1000.0f;
+                Vector3 pos = transform.position;
+                Transform closest = null;
+
+                foreach(Transform hp in places)
+                {
+                    float dist = Vector3.Distance(pos, hp.position);
+
+                    if (dist < EPSILON )
+                    {
+                        EPSILON = dist;
+                        closest = hp;
+                    }
+                }
+
+
+                nav.Target.position = closest.position; 
 
 
             }

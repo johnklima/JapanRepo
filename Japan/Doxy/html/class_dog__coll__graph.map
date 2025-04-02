@@ -1,0 +1,10 @@
+<map id="Dog" name="Dog">
+<area shape="rect" id="Node000001" title=" " alt="" coords="61,172,107,199"/>
+<area shape="rect" id="Node000002" href="$class_animal.html" title=" " alt="" coords="5,81,67,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,120,79,170,75,173,48,123"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,5,140,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,46,46,82,42,80,66,43"/>
+<area shape="rect" id="Node000004" href="$class_vision_cone.html" title=" " alt="" coords="90,81,179,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="103,43,128,79,124,82,99,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,123,94,173,89,170,118,120"/>
+</map>

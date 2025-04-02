@@ -1,6 +1,10 @@
 var hierarchy =
 [
     [ "MonoBehaviour", null, [
+      [ "Animal", "class_animal.html", [
+        [ "Cat", "class_cat.html", null ],
+        [ "Dog", "class_dog.html", null ]
+      ] ],
       [ "BaseEncounter", "class_base_encounter.html", [
         [ "DialogEncounter", "class_dialog_encounter.html", null ]
       ] ],
@@ -21,9 +25,11 @@ var hierarchy =
       [ "Fight", "class_fight.html", null ],
       [ "FollowCamera", "class_follow_camera.html", null ],
       [ "NarrativeEvent", "class_narrative_event.html", null ],
+      [ "NatureEncounter", "class_nature_encounter.html", null ],
       [ "OrbitCamera", "class_orbit_camera.html", null ],
       [ "Person", "class_person.html", null ],
-      [ "Player", "class_player.html", null ]
+      [ "Player", "class_player.html", null ],
+      [ "VisionCone", "class_vision_cone.html", null ]
     ] ],
     [ "player.PlayerSheet", "classplayer_1_1_player_sheet.html", null ]
 ];

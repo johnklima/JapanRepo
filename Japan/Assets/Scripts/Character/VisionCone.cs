@@ -5,6 +5,7 @@ using UnityEngine;
 public class VisionCone : MonoBehaviour
 {
     CharacterNavigator nav;
+    Animal animal;
 
     public Transform Target;
 
@@ -12,6 +13,7 @@ public class VisionCone : MonoBehaviour
     void Start()
     {
          nav = transform.parent.GetComponent<CharacterNavigator>();
+         animal = transform.parent.GetComponent<Animal>();
     }
 
     // Update is called once per frame
@@ -49,15 +51,13 @@ public class VisionCone : MonoBehaviour
                 {
                    
                     Debug.Log("s/he ray sees " + hit.transform.name);
-                    nav.agent.isStopped = true;
-                    nav.Target = nav.transform; //set my goal object to me (the cone parent)
+                    StartCoroutine(Countdown(1));
                 }
             }
             else  //hits nothing
             {
                 Debug.Log("s/he no longer ray sees " + Target.name);
-                nav.agent.isStopped = true;
-                nav.Target = nav.transform; //set my goal object to me (the cone parent)
+                StartCoroutine(Countdown(1));
             }
         }
     }
@@ -67,11 +67,27 @@ public class VisionCone : MonoBehaviour
         if (other.transform == Target)
         {
             Debug.Log("he no longer cones sees " + other.name);
-            nav.agent.isStopped = true;
-            nav.Target = nav.transform;
+            StartCoroutine( Countdown(1) );
 
         }
 
 
+    }
+
+    void DoStuff()
+    {
+        // Whatever you want to happen when the countdown finishes
+        animal.gotoPeviousTarget();
+    }
+
+    IEnumerator Countdown(int seconds)
+    {
+        int counter = seconds;
+        while (counter > 0)
+        {
+            yield return new WaitForSeconds(1);
+            counter--;
+        }
+        DoStuff();
     }
 }

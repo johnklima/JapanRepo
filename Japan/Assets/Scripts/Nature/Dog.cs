@@ -6,14 +6,23 @@ public class Dog : Animal
 {
 
     public VisionCone vizcone;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         Health = 20;
+        prevTarget = transform.GetComponent<CharacterNavigator>().Target;
+
+
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        
+    }
+    
+    // LateUpdate is called once per frame
     void LateUpdate()
     {
         if (commence)
