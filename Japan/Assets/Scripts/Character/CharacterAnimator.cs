@@ -11,6 +11,7 @@ public class CharacterAnimator : MonoBehaviour
     void Start()
     {
         anim = transform.GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -19,6 +20,11 @@ public class CharacterAnimator : MonoBehaviour
        
 
     }
+    /// <summary>
+    /// Sets the float parameter for velocity (idle, walk, run).
+    /// </summary>
+    /// <param name="parm">The parm.</param>
+    /// <param name="val">The value.</param>
     public void SetFloatParameter(string parm, float val)
     {
         anim.SetFloat(parm, val);

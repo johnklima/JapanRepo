@@ -48,29 +48,29 @@ public class DialogInteraction : BaseInteraction
         "ignore"
     };
 
-    
+
     // Geisha          0
-    // Ninja           1
-    // Grunt           2
-    // Warrior         3
-    // Sensei          4
+    // Sensei          1
+    // Ninja           2
+    // Grunt           3
+    // Warior          4
     // Village Man     5
     // Village Woman   6
-   
+
     private void Start()
     {
         resultTable = new int[rows, cols];
 
         //Geisha
         resultTable[0, 0] = 0;      //Geisha
-        resultTable[0, 1] = 1;      //Ninja
+        resultTable[0, 1] = 1;      //Sensei
         resultTable[0, 2] = 2;
         resultTable[0, 3] = 8;
         resultTable[0, 4] = 2;
         resultTable[0, 5] = 3;
         resultTable[0, 6] = 3;
 
-        //Ninja
+        //Sensei
         resultTable[1, 0] = 7;
         resultTable[1, 1] = 0;
         resultTable[1, 2] = 3;
@@ -79,7 +79,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[1, 5] = 4;
         resultTable[1, 6] = 4;
 
-        //Grunt
+        //Ninja
         resultTable[2, 0] = 2;
         resultTable[2, 1] = 6;
         resultTable[2, 2] = 5;
@@ -88,7 +88,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[2, 5] = 5;
         resultTable[2, 6] = 5;
 
-        //warrior
+        //Grunt
         resultTable[3, 0] = 2;
         resultTable[3, 1] = 0;
         resultTable[3, 2] = 5;
@@ -97,7 +97,7 @@ public class DialogInteraction : BaseInteraction
         resultTable[3, 5] = 3;
         resultTable[3, 6] = 3;
 
-        //Sensei
+        //Warrior
         resultTable[4, 0] = 2;
         resultTable[4, 1] = 0;
         resultTable[4, 2] = 8;
