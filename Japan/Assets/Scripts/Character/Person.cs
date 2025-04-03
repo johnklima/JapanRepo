@@ -16,7 +16,7 @@ public class Person : MonoBehaviour
 
     public int typeOfPerson = 0;        //there are 7 types of person in japan world
     private int curPersonType = 0;      //something I will likely save to a json file
-
+    private int persons = 7;
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +40,13 @@ public class Person : MonoBehaviour
     {
         //given person type (random?) enable the model
         //first turn them all off
+        int p = 0;
         foreach (Transform _person in transform)
-        {
-            _person.gameObject.SetActive(false);
+        {            
+            if(p < persons)   //last transform is camera stick - TODO: change this
+                _person.gameObject.SetActive(false);
+
+            p++;
         }
         //enable the one, and buffer it should I need to know previous type (often the case)
         transform.GetChild(_type).gameObject.SetActive(true);

@@ -35,6 +35,14 @@ using UnityEngine;
 /// </summary>
 public class StatePersonAnimationLUT : AnimationLUT
 {
+    public const int CHAT       = 0;
+    public const int BOW        = 1;
+    public const int INSULT     = 2;
+    public const int BLESS      = 3;
+    public const int WHISPER    = 4;
+    public const int AGRO       = 5;
+    public const int SNOB       = 6;
+    public const int IGNORE     = 7;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="StatePersonAnimationLUT"/> class.
@@ -56,7 +64,7 @@ public class StatePersonAnimationLUT : AnimationLUT
                 "bless"     ,
                 "whisper"   ,
                 "agro"      ,
-                "downlook"  ,
+                "snob"      ,
                 "ignore"
             };
 
