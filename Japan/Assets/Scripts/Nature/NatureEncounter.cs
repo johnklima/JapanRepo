@@ -37,7 +37,7 @@ public class NatureEncounter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Animal")
+        if ( other.transform.GetComponent<Animal>() )
         {
             Debug.Log("Nature trigger " + other.name);
 
