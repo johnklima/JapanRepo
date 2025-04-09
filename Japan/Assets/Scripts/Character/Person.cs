@@ -16,7 +16,7 @@ public class Person : Mammal
 
     public int typeOfPerson = 0;        //there are 7 types of person in japan world
     private int curPersonType = 0;      //something I will likely save to a json file
-    private int persons = 7;
+    public Transform PersonTypes;
 
     // Start is called before the first frame update
     void Start()
@@ -35,21 +35,21 @@ public class Person : Mammal
             changePersonType(typeOfPerson);
         }
     }
-
+    /// <summary>
+    /// Changes the type of the person.
+    /// </summary>
+    /// <param name="_type">The int type.</param>
     void changePersonType(int _type)
     {
         //given person type (random?) enable the model
         //first turn them all off
-        int p = 0;
-        foreach (Transform _person in transform)
+       
+        foreach (Transform _person in PersonTypes)        
         {            
-            if(p < persons)   //last transform is camera stick - TODO: change this
-                _person.gameObject.SetActive(false);
-
-            p++;
+            _person.gameObject.SetActive(false);           
         }
         //enable the one, and buffer it should I need to know previous type (often the case)
-        transform.GetChild(_type).gameObject.SetActive(true);
+        PersonTypes.GetChild(_type).gameObject.SetActive(true);
         curPersonType = typeOfPerson = _type;
 
     }

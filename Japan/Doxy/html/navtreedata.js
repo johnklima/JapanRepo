@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Japan", "index.html", [
+  [ "JapanDoxy", "index.html", [
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -46,7 +46,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_animal_8cs.html"
+"_animal_8cs.html",
+"classplayer_1_1_player_sheet.html#ab258bb43ce621c172f8ba996953ee375"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['orbitcamera_0',['OrbitCamera',['../class_orbit_camera.html',1,'']]]
+  ['mammal_0',['Mammal',['../class_mammal.html',1,'']]]
 ];

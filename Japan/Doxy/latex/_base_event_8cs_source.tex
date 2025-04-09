@@ -1,0 +1,27 @@
+\doxysection{Base\+Event.\+cs}
+\hypertarget{_base_event_8cs_source}{}\label{_base_event_8cs_source}\index{C:/JapanRepo/Japan/Assets/Scripts/Narrative/BaseEvent.cs@{C:/JapanRepo/Japan/Assets/Scripts/Narrative/BaseEvent.cs}}
+\mbox{\hyperlink{_base_event_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine.UIElements;}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00010}\mbox{\hyperlink{class_base_event}{00010}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_event}{BaseEvent}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00015}\mbox{\hyperlink{class_base_event_a3cd59e53317d2ee30946c7582b50ed2c}{00015}}\ \ \ \ \ \textcolor{keyword}{public}\ List<BaseEncounter>\ \mbox{\hyperlink{class_base_event_a3cd59e53317d2ee30946c7582b50ed2c}{encounters}};\ \ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{int}\ which\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ OnTriggerEnter(Collider\ other)}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(other.tag\ ==\ \textcolor{stringliteral}{"{}Player"{}})}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}BaseEvent\ trigger\ "{}}\ +\ other.name);}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_event_a3cd59e53317d2ee30946c7582b50ed2c}{encounters}}[which].addParticipant(\ other.transform.GetComponent<\mbox{\hyperlink{class_base_participant}{BaseParticipant}}>()\ );}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00029}00029\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00030}00030\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_event_8cs_source_l00031}00031\ \}}
+
+\end{DoxyCode}

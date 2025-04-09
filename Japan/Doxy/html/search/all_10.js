@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['velo_0',['velo',['../class_character_navigator.html#a739eb01fe4866c6a777d5fae5b6e780f',1,'CharacterNavigator']]],
-  ['velocity_1',['velocity',['../class_orbit_camera.html#ab9ef2dceb5413641905e04b9f9f6f34b',1,'OrbitCamera']]],
-  ['visioncone_2',['VisionCone',['../class_vision_cone.html',1,'']]],
-  ['visioncone_2ecs_3',['VisionCone.cs',['../_vision_cone_8cs.html',1,'']]],
-  ['vizcone_4',['vizcone',['../class_dog.html#a387d2c7ea97a11ce1ba053d165f039e9',1,'Dog']]]
+  ['target_0',['Target',['../class_follow_camera.html#af50eb1fdeae6901757beac5c25d1add3',1,'FollowCamera.Target'],['../class_character_navigator.html#aecc5b87bf96dd5afbf559fb872f9eb41',1,'CharacterNavigator.Target'],['../class_doppleganger.html#ac62720eca92041bbbfab7f4e0838bada',1,'Doppleganger.Target'],['../class_vision_cone.html#a76ef657403e91600340d2cf567824127',1,'VisionCone.Target']]],
+  ['targets_1',['targets',['../class_animal.html#aa4be67ac62c895e46452e2c49507d603',1,'Animal']]],
+  ['typeofperson_2',['typeOfPerson',['../class_person.html#a794a04df28f7239718ef38391522d361',1,'Person']]]
 ];

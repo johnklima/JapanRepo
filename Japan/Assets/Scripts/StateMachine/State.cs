@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class State : MonoBehaviour
 {
-    public List<State> childStates;
+    public List<State> childStates = new List<State>();
     public abstract int Process();
 
 }

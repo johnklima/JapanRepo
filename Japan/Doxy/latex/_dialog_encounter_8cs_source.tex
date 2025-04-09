@@ -1,0 +1,36 @@
+\doxysection{Dialog\+Encounter.\+cs}
+\hypertarget{_dialog_encounter_8cs_source}{}\label{_dialog_encounter_8cs_source}\index{C:/JapanRepo/Japan/Assets/Scripts/Narrative/DialogEncounter.cs@{C:/JapanRepo/Japan/Assets/Scripts/Narrative/DialogEncounter.cs}}
+\mbox{\hyperlink{_dialog_encounter_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00008}\mbox{\hyperlink{class_dialog_encounter}{00008}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dialog_encounter}{DialogEncounter}}\ :\ \mbox{\hyperlink{class_base_encounter}{BaseEncounter}}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00010}00010\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00011}00011\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00012}00012\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00014}00014\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{commence}})}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_base_participant}{BaseParticipant}}\ p\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_base_encounter_a3b845f71846485c5a184855189504e1f}{participants}})}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//face\ each\ p\ to\ the\ center\ of\ the\ encounter\ BY\ DEFAULT\ if\ there\ is\ nothing\ better\ to\ look\ at}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.transform.GetComponent<\mbox{\hyperlink{class_character_navigator}{CharacterNavigator}}>().LookAtTarget\ =\ transform;}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.commence\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Dialog\ Encounter\ participant\ commence\ "{}}\ +\ p.name);}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_encounter_a73a9ae2ad7dbdde075701b70c5955eb7}{commence}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dialog_encounter_8cs_source_l00033}00033\ \}}
+
+\end{DoxyCode}

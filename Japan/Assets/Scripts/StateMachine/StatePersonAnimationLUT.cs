@@ -99,13 +99,13 @@ public class StatePersonAnimationLUT : AnimationLUT
             resultTable[WARRIOR, WOMAN]     = INSULT;
 
             //Sensei
-            resultTable[SENSEI, GEISHA] = SNOB;
-            resultTable[SENSEI, SENSEI] = CHAT;
-            resultTable[SENSEI, NINJA] = IGNORE;
-            resultTable[SENSEI, GRUNT] = CHAT;
-            resultTable[SENSEI, WARRIOR] = CHAT;
-            resultTable[SENSEI, MAN] = BLESS;
-            resultTable[SENSEI, WOMAN] = BLESS;
+            resultTable[SENSEI, GEISHA]     = SNOB;
+            resultTable[SENSEI, SENSEI]     = CHAT;
+            resultTable[SENSEI, NINJA]      = IGNORE;
+            resultTable[SENSEI, GRUNT]      = CHAT;
+            resultTable[SENSEI, WARRIOR]    = CHAT;
+            resultTable[SENSEI, MAN]        = BLESS;
+            resultTable[SENSEI, WOMAN]      = BLESS;
 
 
             //Vil Man

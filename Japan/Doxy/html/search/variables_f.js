@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['velo_0',['velo',['../class_character_navigator.html#a739eb01fe4866c6a777d5fae5b6e780f',1,'CharacterNavigator']]],
-  ['velocity_1',['velocity',['../class_orbit_camera.html#ab9ef2dceb5413641905e04b9f9f6f34b',1,'OrbitCamera']]],
-  ['vizcone_2',['vizcone',['../class_dog.html#a387d2c7ea97a11ce1ba053d165f039e9',1,'Dog']]]
+  ['sensei_0',['SENSEI',['../class_state_person_animation_l_u_t.html#a3db80c72e9dbf1e3729af695b6d25ab2',1,'StatePersonAnimationLUT']]],
+  ['snob_1',['SNOB',['../class_state_person_animation_l_u_t.html#a2bb3f8f5a96cc245eb00f4a716c302ac',1,'StatePersonAnimationLUT']]],
+  ['str_2',['STR',['../classplayer_1_1_player_sheet.html#ac411419cbd30268f966ee50ec80949c6',1,'player::PlayerSheet']]],
+  ['strf_3',['STRf',['../classplayer_1_1_player_sheet.html#a37ba3c65878b8fa9b4fe5b4f7915ffca',1,'player::PlayerSheet']]],
+  ['survivability_4',['survivability',['../class_fight.html#af52eab3534bdd5e5a08efad40a84cbc8',1,'Fight']]]
 ];

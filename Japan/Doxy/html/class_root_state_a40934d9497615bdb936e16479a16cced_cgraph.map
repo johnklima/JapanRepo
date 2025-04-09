@@ -1,0 +1,5 @@
+<map id="RootState.Process" name="RootState.Process">
+<area shape="rect" id="Node000001" title="Processes this instance of a Root State. Root states simply start the DAG down its recursion." alt="" coords="5,5,138,32"/>
+<area shape="rect" id="Node000002" href="$class_state.html#acde63b498e90342a1df8311d6b2e01b8" title=" " alt="" coords="186,5,290,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,16,170,16,170,21,138,21"/>
+</map>

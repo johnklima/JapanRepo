@@ -1,0 +1,30 @@
+\doxysection{LUTState.\+cs}
+\hypertarget{_l_u_t_state_8cs_source}{}\label{_l_u_t_state_8cs_source}\index{C:/JapanRepo/Japan/Assets/Scripts/StateMachine/LUTState.cs@{C:/JapanRepo/Japan/Assets/Scripts/StateMachine/LUTState.cs}}
+\mbox{\hyperlink{_l_u_t_state_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00005}\mbox{\hyperlink{class_l_u_t_state}{00005}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_l_u_t_state}{LUTState}}\ :\ \mbox{\hyperlink{class_state}{State}}}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00010}\mbox{\hyperlink{class_l_u_t_state_ae1e18d77e5f20ce6dcfd9afa99c98962}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_l_u_t}{LUT}}\ \mbox{\hyperlink{class_l_u_t_state_ae1e18d77e5f20ce6dcfd9afa99c98962}{results}};}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00014}\mbox{\hyperlink{class_l_u_t_state_a6711e67c1e2c5af32183bee5af102358}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_l_u_t_state_a6711e67c1e2c5af32183bee5af102358}{row}};}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00018}\mbox{\hyperlink{class_l_u_t_state_a17af855539b6095981996ba6771ede64}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_l_u_t_state_a17af855539b6095981996ba6771ede64}{col}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00020}\mbox{\hyperlink{class_l_u_t_state_a885284ead02f2359c9850be1a517eb6d}{00020}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_l_u_t_state_a885284ead02f2359c9850be1a517eb6d}{Process}}()}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00021}00021\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//process\ children\ first}}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{class_state}{State}}\ child\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_state_aaee9dec71361149e0d845312ae7cc337}{childStates}})}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ childVal\ =\ child.\mbox{\hyperlink{class_state_acde63b498e90342a1df8311d6b2e01b8}{Process}}();}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (childVal\ >=\ 0)}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ childVal;}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//process\ me}}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_l_u_t_state_ae1e18d77e5f20ce6dcfd9afa99c98962}{results}}.result(\mbox{\hyperlink{class_l_u_t_state_a6711e67c1e2c5af32183bee5af102358}{row}},\mbox{\hyperlink{class_l_u_t_state_a17af855539b6095981996ba6771ede64}{col}});\ \ }
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_l_u_t_state_8cs_source_l00033}00033\ \}}
+
+\end{DoxyCode}

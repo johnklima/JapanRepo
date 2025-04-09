@@ -1,0 +1,85 @@
+\doxysection{Nature\+Encounter.\+cs}
+\hypertarget{_nature_encounter_8cs_source}{}\label{_nature_encounter_8cs_source}\index{C:/JapanRepo/Japan/Assets/Scripts/Nature/NatureEncounter.cs@{C:/JapanRepo/Japan/Assets/Scripts/Nature/NatureEncounter.cs}}
+\mbox{\hyperlink{_nature_encounter_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Unity.VisualScripting;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00006}\mbox{\hyperlink{class_nature_encounter}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_nature_encounter}{NatureEncounter}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00008}00008\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00009}\mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ List<Animal>\ \mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{animals}};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00011}\mbox{\hyperlink{class_nature_encounter_a987cf7315d9a81a5ce78a64324d03845}{00011}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_nature_encounter_a987cf7315d9a81a5ce78a64324d03845}{animalsNeeded}}\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00012}00012\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ currentlyHas\ =\ 0;\ \ \textcolor{comment}{//animals}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00014}00014\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{bool}\ commence\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00022}00022\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{void}\ LateUpdate()}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(commence)}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_animal}{Animal}}\ a\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{animals}})}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\ a.GetType().ToString()\ );}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a.commence\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ commence\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ OnTriggerEnter(Collider\ other)}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00039}00039\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ other.transform.GetComponent<Animal>()\ )}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}Nature\ trigger\ "{}}\ +\ other.name);}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(currentlyHas\ <\ \mbox{\hyperlink{class_nature_encounter_a987cf7315d9a81a5ce78a64324d03845}{animalsNeeded}})}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{animals}}.Add(other.GetComponent<Animal>());}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ currentlyHas++;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (currentlyHas\ ==\ \mbox{\hyperlink{class_nature_encounter_a987cf7315d9a81a5ce78a64324d03845}{animalsNeeded}})}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}do\ something\ with\ them\ "{}});}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Animal[]\ tanimls\ =\ \mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{animals}}.ToArray();}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}(Animal\ a\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_nature_encounter_a361492a91d0388827da587db7b7ce7fd}{animals}})}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ tanimls.Length;i++)}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ a!=\ tanimls[i]\ \&\&\ tanimls[i]\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a.\mbox{\hyperlink{class_animal_aeb34b4f464bed40c57c1d595cbab922b}{others}}.Add(tanimls[i]);}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//look\ at\ the\ other}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a.GetComponent<CharacterNavigator>().LookAtTarget\ =\ a.\mbox{\hyperlink{class_animal_aeb34b4f464bed40c57c1d595cbab922b}{others}}[0].transform;}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tanimls[i]\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ commence\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nature_encounter_8cs_source_l00079}00079\ \}}
+
+\end{DoxyCode}

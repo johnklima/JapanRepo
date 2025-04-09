@@ -2,18 +2,23 @@
 \hypertarget{class_animal}{}\label{class_animal}\index{Animal@{Animal}}
 
 
+~\newline
+  
+
+
+
+
 Inheritance diagram for Animal\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=165pt]{class_animal__inherit__graph}
+\includegraphics[width=228pt]{class_animal__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Animal\+:
-\nopagebreak
+Collaboration diagram for Animal\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,6 +31,8 @@ Collaboration diagram for Animal\+:
 void \mbox{\hyperlink{class_animal_ac29f9cbda8271330707cb1925a6a0714}{Decrement\+Health}} ()
 \item 
 void \mbox{\hyperlink{class_animal_a9c669db86d2737e26fa95245cb0dadef}{Increment\+Health}} ()
+\item 
+void \mbox{\hyperlink{class_animal_a009acbf891cdaaefa4ff56dec63767be}{goto\+Pevious\+Target}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -33,6 +40,10 @@ void \mbox{\hyperlink{class_animal_a9c669db86d2737e26fa95245cb0dadef}{Increment\
 List$<$ \mbox{\hyperlink{class_animal}{Animal}} $>$ \mbox{\hyperlink{class_animal_aeb34b4f464bed40c57c1d595cbab922b}{others}}
 \item 
 bool \mbox{\hyperlink{class_animal_a3aa7b8b24d5fbb8b2fd2db809600eb57}{commence}} = false
+\item 
+Transform \mbox{\hyperlink{class_animal_aa4be67ac62c895e46452e2c49507d603}{targets}}
+\item 
+Transform \mbox{\hyperlink{class_animal_aad13ef3128e93e8d8702374d74653167}{prev\+Target}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -41,12 +52,30 @@ int \mbox{\hyperlink{class_animal_acdd44221ba060dbf99f299e1d7827228}{Health}} = 
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+~\newline
+ 
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
+
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_animal_ac29f9cbda8271330707cb1925a6a0714}\index{Animal@{Animal}!DecrementHealth@{DecrementHealth}}
 \index{DecrementHealth@{DecrementHealth}!Animal@{Animal}}
 \doxysubsubsection{\texorpdfstring{DecrementHealth()}{DecrementHealth()}}
 {\footnotesize\ttfamily \label{class_animal_ac29f9cbda8271330707cb1925a6a0714} 
 void Animal.\+Decrement\+Health (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\Hypertarget{class_animal_a009acbf891cdaaefa4ff56dec63767be}\index{Animal@{Animal}!gotoPeviousTarget@{gotoPeviousTarget}}
+\index{gotoPeviousTarget@{gotoPeviousTarget}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{gotoPeviousTarget()}{gotoPeviousTarget()}}
+{\footnotesize\ttfamily \label{class_animal_a009acbf891cdaaefa4ff56dec63767be} 
+void Animal.\+goto\+Pevious\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
 
 \Hypertarget{class_animal_a9c669db86d2737e26fa95245cb0dadef}\index{Animal@{Animal}!IncrementHealth@{IncrementHealth}}
 \index{IncrementHealth@{IncrementHealth}!Animal@{Animal}}
@@ -63,17 +92,49 @@ void Animal.\+Increment\+Health (\begin{DoxyParamCaption}{}{}\end{DoxyParamCapti
 {\footnotesize\ttfamily \label{class_animal_a3aa7b8b24d5fbb8b2fd2db809600eb57} 
 bool Animal.\+commence = false}
 
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
+
 \Hypertarget{class_animal_acdd44221ba060dbf99f299e1d7827228}\index{Animal@{Animal}!Health@{Health}}
 \index{Health@{Health}!Animal@{Animal}}
 \doxysubsubsection{\texorpdfstring{Health}{Health}}
 {\footnotesize\ttfamily \label{class_animal_acdd44221ba060dbf99f299e1d7827228} 
 int Animal.\+Health = 10\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
+
 \Hypertarget{class_animal_aeb34b4f464bed40c57c1d595cbab922b}\index{Animal@{Animal}!others@{others}}
 \index{others@{others}!Animal@{Animal}}
 \doxysubsubsection{\texorpdfstring{others}{others}}
 {\footnotesize\ttfamily \label{class_animal_aeb34b4f464bed40c57c1d595cbab922b} 
 List$<$\mbox{\hyperlink{class_animal}{Animal}}$>$ Animal.\+others}
+
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00012}{12}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
+
+\Hypertarget{class_animal_aad13ef3128e93e8d8702374d74653167}\index{Animal@{Animal}!prevTarget@{prevTarget}}
+\index{prevTarget@{prevTarget}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{prevTarget}{prevTarget}}
+{\footnotesize\ttfamily \label{class_animal_aad13ef3128e93e8d8702374d74653167} 
+Transform Animal.\+prev\+Target}
+
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
+
+\Hypertarget{class_animal_aa4be67ac62c895e46452e2c49507d603}\index{Animal@{Animal}!targets@{targets}}
+\index{targets@{targets}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{class_animal_aa4be67ac62c895e46452e2c49507d603} 
+Transform Animal.\+targets}
+
+
+
+Definition at line \mbox{\hyperlink{_animal_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_animal_8cs_source}{Animal.\+cs}}.
 
 
 

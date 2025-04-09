@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['participants_0',['participants',['../class_base_encounter.html#a3b845f71846485c5a184855189504e1f',1,'BaseEncounter']]],
-  ['participantsneeded_1',['participantsNeeded',['../class_base_encounter.html#a3f315cf095f633d8ece7a0ee8a08fbe4',1,'BaseEncounter']]],
-  ['player_2',['player',['../class_fight.html#af058d3199f640a913fac99425e043bdc',1,'Fight']]],
-  ['playersheet_3',['playerSheet',['../class_player.html#aab9ffe9e430e946b182a9f651bb4ea94',1,'Player']]],
-  ['playersneeded_4',['playersNeeded',['../class_encounter.html#a5c008d46fc454022080fd8bd8674a349',1,'Encounter']]]
+  ['name_0',['Name',['../classplayer_1_1_player_sheet.html#a04198a9ccc35ff89f2d8c6b0d31b1a81',1,'player.PlayerSheet.Name'],['../class_l_u_t.html#a246f764d4f3a6c70c66f9e1493a3c76d',1,'LUT.Name']]],
+  ['ninja_1',['NINJA',['../class_state_person_animation_l_u_t.html#a020b50324e09e345044ee43faebd0537',1,'StatePersonAnimationLUT']]]
 ];

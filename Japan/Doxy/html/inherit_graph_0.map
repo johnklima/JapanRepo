@@ -1,51 +1,73 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,487,117,513"/>
-<area shape="rect" id="Node000001" href="$class_animal.html" title=" " alt="" coords="201,56,262,83"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="63,471,77,385,98,273,127,165,144,123,163,93,180,80,200,72,202,77,183,84,167,96,149,125,132,167,103,274,82,386,69,472"/>
-<area shape="rect" id="Node000004" href="$class_base_encounter.html" title="the encounter is the type of thing that happens when one or more characters are collected in from an ..." alt="" coords="177,107,287,133"/>
-<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="60,471,64,405,79,318,92,272,110,226,133,182,163,143,178,132,182,136,167,147,138,185,115,228,97,273,84,320,70,406,65,471"/>
-<area shape="rect" id="Node000006" href="$class_base_event.html" title="the event is the unit that collects participants for the encounter. &#160;&#160;by default, it is a volume trig..." alt="" coords="189,157,274,184"/>
-<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="61,471,69,413,85,340,99,301,115,263,137,226,163,194,187,178,190,183,166,198,141,230,120,265,103,303,91,341,74,414,67,471"/>
-<area shape="rect" id="Node000008" href="$class_base_interaction.html" title="this goes on a player, concrete type being what is processed" alt="" coords="176,208,288,235"/>
-<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="64,471,74,423,92,363,121,300,140,271,163,245,179,233,183,237,166,249,144,274,126,303,97,364,79,424,69,472"/>
-<area shape="rect" id="Node000010" href="$class_base_participant.html" title="Abstract participant class." alt="" coords="175,259,288,285"/>
-<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="67,471,80,432,99,385,127,337,163,295,180,284,183,288,166,299,131,340,104,387,85,434,72,472"/>
-<area shape="rect" id="Node000012" href="$class_c_v.html" title=" " alt="" coords="212,309,252,336"/>
-<area shape="poly" id="edge12_Node000000_Node000012" title=" " alt="" coords="72,471,107,409,133,375,163,346,187,332,210,324,212,329,189,337,166,350,137,379,112,412,77,474"/>
-<area shape="rect" id="Node000013" href="$class_character_animator.html" title=" " alt="" coords="167,360,297,387"/>
-<area shape="poly" id="edge13_Node000000_Node000013" title=" " alt="" coords="81,473,117,434,163,396,186,385,188,390,166,401,120,438,85,477"/>
-<area shape="rect" id="Node000014" href="$class_character_navigator.html" title=" " alt="" coords="165,411,299,437"/>
-<area shape="poly" id="edge14_Node000000_Node000014" title=" " alt="" coords="101,477,164,447,192,435,194,440,166,452,103,482"/>
-<area shape="rect" id="Node000015" href="$class_doppleganger.html" title=" " alt="" coords="181,461,282,488"/>
-<area shape="poly" id="edge15_Node000000_Node000015" title=" " alt="" coords="131,487,180,480,181,485,132,492"/>
-<area shape="rect" id="Node000016" href="$class_encounter.html" title=" " alt="" coords="192,512,272,539"/>
-<area shape="poly" id="edge16_Node000000_Node000016" title=" " alt="" coords="132,508,191,517,191,522,132,513"/>
-<area shape="rect" id="Node000017" href="$class_fight.html" title=" " alt="" coords="207,563,257,589"/>
-<area shape="poly" id="edge17_Node000000_Node000017" title=" " alt="" coords="103,518,166,548,208,565,206,570,164,553,101,523"/>
-<area shape="rect" id="Node000018" href="$class_follow_camera.html" title=" " alt="" coords="179,613,284,640"/>
-<area shape="poly" id="edge18_Node000000_Node000018" title=" " alt="" coords="85,523,120,562,166,599,188,610,186,615,163,604,117,566,81,527"/>
-<area shape="rect" id="Node000019" href="$class_narrative_event.html" title=" " alt="" coords="178,664,286,691"/>
-<area shape="poly" id="edge19_Node000000_Node000019" title=" " alt="" coords="77,526,112,588,137,621,166,650,185,661,182,666,163,654,133,625,107,591,72,529"/>
-<area shape="rect" id="Node000020" href="$class_nature_encounter.html" title=" " alt="" coords="172,715,292,741"/>
-<area shape="poly" id="edge20_Node000000_Node000020" title=" " alt="" coords="72,528,85,566,104,613,131,660,166,701,183,712,180,716,163,705,127,663,99,615,80,568,67,529"/>
-<area shape="rect" id="Node000021" href="$class_orbit_camera.html" title=" " alt="" coords="184,765,280,792"/>
-<area shape="poly" id="edge21_Node000000_Node000021" title=" " alt="" coords="69,528,79,576,97,636,126,697,144,726,166,751,185,764,182,768,163,755,140,729,121,700,92,637,74,577,64,529"/>
-<area shape="rect" id="Node000022" href="$class_person.html" title="Geisha 0 Ninja 1 Grunt 2 Warrior 3 Sensei 4 Village Man 5 Village Woman 6." alt="" coords="201,816,263,843"/>
-<area shape="poly" id="edge22_Node000000_Node000022" title=" " alt="" coords="67,529,74,586,91,659,103,697,120,735,141,770,167,802,183,814,201,821,199,826,180,818,163,806,137,774,115,737,99,699,85,660,69,587,61,529"/>
-<area shape="rect" id="Node000023" href="$class_player.html" title=" " alt="" coords="203,867,261,893"/>
-<area shape="poly" id="edge23_Node000000_Node000023" title=" " alt="" coords="65,529,70,594,84,680,97,727,115,772,138,815,167,853,183,865,203,873,201,878,181,870,163,857,133,818,110,774,92,728,79,682,64,595,60,529"/>
-<area shape="rect" id="Node000024" href="$class_vision_cone.html" title=" " alt="" coords="188,917,276,944"/>
-<area shape="poly" id="edge24_Node000000_Node000024" title=" " alt="" coords="69,528,82,614,103,726,132,833,149,875,167,903,189,919,186,923,163,907,144,877,127,835,98,727,77,615,63,529"/>
-<area shape="rect" id="Node000002" href="$class_cat.html" title=" " alt="" coords="386,5,428,32"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="277,54,385,22,386,27,278,59"/>
-<area shape="rect" id="Node000003" href="$class_dog.html" title=" " alt="" coords="384,56,430,83"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="278,67,384,67,384,72,278,72"/>
-<area shape="rect" id="Node000005" href="$class_dialog_encounter.html" title="Handles each Participant in an Encounter." alt="" coords="348,107,466,133"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="302,117,348,117,348,123,302,123"/>
-<area shape="rect" id="Node000007" href="$class_dialog_event.html" title="At the moment, this concrete does nothing beyond its base." alt="" coords="361,157,453,184"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="290,168,361,168,361,173,290,173"/>
-<area shape="rect" id="Node000009" href="$class_dialog_interaction.html" title=" " alt="" coords="348,208,467,235"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="304,219,347,219,347,224,304,224"/>
-<area shape="rect" id="Node000011" href="$class_player_participant.html" title=" " alt="" coords="347,259,467,285"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="304,269,347,269,347,275,304,275"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,588,117,615"/>
+<area shape="rect" id="Node000001" href="$class_animal.html" title=" " alt="" coords="228,56,290,83"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="62,572,71,467,90,324,103,251,120,185,139,130,163,93,177,81,194,74,227,67,228,72,195,79,180,86,167,96,144,133,125,186,108,252,95,324,76,468,67,573"/>
+<area shape="rect" id="Node000006" href="$class_audio_timeline_marker_handler.html" title=" " alt="" coords="165,107,353,133"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="62,572,73,476,93,348,107,284,123,225,141,177,163,144,178,132,181,136,167,147,146,179,128,227,112,285,98,349,78,477,68,573"/>
+<area shape="rect" id="Node000008" href="$class_base_encounter.html" title="the encounter is the type of thing that happens when one or more characters are collected in from an ..." alt="" coords="204,157,314,184"/>
+<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="63,572,76,486,97,373,126,265,143,223,163,194,181,181,202,173,204,178,184,186,167,198,148,226,131,267,102,374,81,487,68,573"/>
+<area shape="rect" id="Node000010" href="$class_base_event.html" title="the event is the unit that collects participants for the encounter. &#160;&#160;by default, it is a volume trig..." alt="" coords="216,208,302,235"/>
+<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="59,572,62,505,76,418,89,371,107,325,132,282,163,245,187,229,215,221,216,226,190,234,166,249,136,285,112,327,94,373,81,419,68,506,64,572"/>
+<area shape="rect" id="Node000012" href="$class_base_interaction.html" title="this goes on a player, concrete type being what is processed" alt="" coords="203,259,315,285"/>
+<area shape="poly" id="edge12_Node000000_Node000012" title=" " alt="" coords="61,572,67,514,83,440,96,401,113,362,135,327,163,295,181,283,201,275,203,280,183,288,166,299,140,330,118,365,101,403,88,441,72,515,66,573"/>
+<area shape="rect" id="Node000014" href="$class_base_participant.html" title="Abstract participant class." alt="" coords="202,309,316,336"/>
+<area shape="poly" id="edge14_Node000000_Node000014" title=" " alt="" coords="63,572,72,523,90,462,119,400,139,371,163,346,181,334,201,327,203,332,183,339,166,350,143,374,124,402,95,464,77,524,68,573"/>
+<area shape="rect" id="Node000016" href="$class_character_animator.html" title=" " alt="" coords="194,360,324,387"/>
+<area shape="poly" id="edge16_Node000000_Node000016" title=" " alt="" coords="66,572,78,533,98,485,126,437,163,397,192,381,194,386,166,401,130,441,102,488,83,534,71,574"/>
+<area shape="rect" id="Node000017" href="$class_character_navigator.html" title=" " alt="" coords="192,411,326,437"/>
+<area shape="poly" id="edge17_Node000000_Node000017" title=" " alt="" coords="71,572,106,509,132,476,163,447,190,433,193,438,166,452,136,479,110,512,76,575"/>
+<area shape="rect" id="Node000018" href="$class_character_state.html" title=" " alt="" coords="204,461,314,488"/>
+<area shape="poly" id="edge18_Node000000_Node000018" title=" " alt="" coords="80,574,116,535,163,498,203,482,205,487,166,502,119,539,83,578"/>
+<area shape="rect" id="Node000019" href="$class_complex_orbit_camera.html" title=" " alt="" coords="185,512,332,539"/>
+<area shape="poly" id="edge19_Node000000_Node000019" title=" " alt="" coords="99,578,164,548,199,537,200,542,166,553,102,583"/>
+<area shape="rect" id="Node000020" href="$class_doppleganger.html" title=" " alt="" coords="208,563,310,589"/>
+<area shape="poly" id="edge20_Node000000_Node000020" title=" " alt="" coords="132,590,207,580,208,585,133,595"/>
+<area shape="rect" id="Node000021" href="$class_encounter.html" title=" " alt="" coords="219,613,299,640"/>
+<area shape="poly" id="edge21_Node000000_Node000021" title=" " alt="" coords="133,608,219,619,218,624,132,613"/>
+<area shape="rect" id="Node000022" href="$class_fight.html" title=" " alt="" coords="234,664,284,691"/>
+<area shape="poly" id="edge22_Node000000_Node000022" title=" " alt="" coords="102,620,166,650,234,669,232,675,164,654,99,625"/>
+<area shape="rect" id="Node000023" href="$class_follow_camera.html" title=" " alt="" coords="206,715,312,741"/>
+<area shape="poly" id="edge23_Node000000_Node000023" title=" " alt="" coords="83,625,119,664,166,700,207,716,205,721,163,705,116,668,80,628"/>
+<area shape="rect" id="Node000024" href="$class_l_u_t.html" title="What to do when." alt="" coords="236,765,282,792"/>
+<area shape="poly" id="edge24_Node000000_Node000024" title=" " alt="" coords="76,628,110,691,136,723,166,751,201,767,236,774,235,780,200,772,163,756,132,727,106,694,71,630"/>
+<area shape="rect" id="Node000027" href="$class_narrative_event.html" title=" " alt="" coords="205,816,313,843"/>
+<area shape="poly" id="edge27_Node000000_Node000027" title=" " alt="" coords="71,629,83,668,102,715,130,762,166,802,185,813,205,820,203,825,182,818,163,806,126,765,98,717,78,670,66,631"/>
+<area shape="rect" id="Node000028" href="$class_nature_encounter.html" title=" " alt="" coords="199,867,318,893"/>
+<area shape="poly" id="edge28_Node000000_Node000028" title=" " alt="" coords="68,630,77,679,95,739,124,800,143,828,166,853,182,863,200,870,198,875,180,868,163,857,139,832,119,803,90,741,72,680,63,631"/>
+<area shape="rect" id="Node000029" href="$class_orbit_camera.html" title=" " alt="" coords="211,917,306,944"/>
+<area shape="poly" id="edge29_Node000000_Node000029" title=" " alt="" coords="66,630,72,688,88,761,101,800,118,838,140,873,166,903,187,917,211,924,210,929,185,922,163,907,135,876,113,840,96,802,83,763,67,689,61,631"/>
+<area shape="rect" id="Node000030" href="$class_player.html" title=" " alt="" coords="230,968,288,995"/>
+<area shape="poly" id="edge30_Node000000_Node000030" title=" " alt="" coords="64,630,68,697,81,784,94,830,112,875,136,917,167,954,180,964,196,971,230,978,229,983,195,976,178,969,163,958,132,920,107,878,89,832,76,785,62,697,59,631"/>
+<area shape="rect" id="Node000031" href="$class_script_usage_timeline.html" title=" " alt="" coords="188,1019,330,1045"/>
+<area shape="poly" id="edge31_Node000000_Node000031" title=" " alt="" coords="68,630,81,716,102,829,131,936,148,977,167,1005,189,1019,186,1024,163,1009,143,980,126,937,97,830,76,717,63,630"/>
+<area shape="rect" id="Node000032" href="$class_state.html" title=" " alt="" coords="233,1069,285,1096"/>
+<area shape="poly" id="edge32_Node000000_Node000032" title=" " alt="" coords="68,630,78,726,98,853,112,918,128,976,146,1023,167,1056,181,1066,198,1074,233,1080,232,1085,196,1079,178,1071,163,1059,141,1026,123,978,107,919,93,854,73,726,62,630"/>
+<area shape="rect" id="Node000035" href="$class_vision_cone.html" title=" " alt="" coords="215,1120,303,1147"/>
+<area shape="poly" id="edge35_Node000000_Node000035" title=" " alt="" coords="67,630,76,735,95,878,108,951,125,1016,144,1070,167,1106,189,1121,215,1129,213,1134,186,1126,163,1110,139,1072,120,1018,103,952,90,879,71,736,62,630"/>
+<area shape="rect" id="Node000002" href="$class_mammal.html" title=" " alt="" coords="447,56,518,83"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="305,67,447,67,447,72,305,72"/>
+<area shape="rect" id="Node000003" href="$class_cat.html" title=" " alt="" coords="679,5,722,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="533,55,678,21,680,26,534,60"/>
+<area shape="rect" id="Node000004" href="$class_dog.html" title=" " alt="" coords="678,56,723,83"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="534,67,678,67,678,72,534,72"/>
+<area shape="rect" id="Node000005" href="$class_person.html" title="Geisha 0 Ninja 1 Grunt 2 Warrior 3 Sensei 4 Village Man 5 Village Woman 6." alt="" coords="669,107,732,133"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="534,78,669,110,668,115,533,83"/>
+<area shape="rect" id="Node000007" href="$class_character_marker_handler.html" title=" " alt="" coords="401,107,564,133"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="369,117,401,117,401,123,369,123"/>
+<area shape="rect" id="Node000009" href="$class_dialog_encounter.html" title="Handles each Participant in an Encounter." alt="" coords="424,157,541,184"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="330,168,424,168,424,173,330,173"/>
+<area shape="rect" id="Node000011" href="$class_dialog_event.html" title="At the moment, this concrete does nothing beyond its base." alt="" coords="436,208,529,235"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="317,219,436,219,436,224,317,224"/>
+<area shape="rect" id="Node000013" href="$class_dialog_interaction.html" title=" " alt="" coords="423,259,542,285"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="330,269,423,269,423,275,330,275"/>
+<area shape="rect" id="Node000015" href="$class_player_participant.html" title=" " alt="" coords="422,309,543,336"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="331,320,422,320,422,325,331,325"/>
+<area shape="rect" id="Node000025" href="$class_animation_l_u_t.html" title="Lookup table for animation param name/indexes given row/col conditions." alt="" coords="430,765,535,792"/>
+<area shape="poly" id="edge25_Node000024_Node000025" title=" " alt="" coords="298,776,430,776,430,781,298,781"/>
+<area shape="rect" id="Node000026" href="$class_state_person_animation_l_u_t.html" title="A concrete animation LUT for a specific type of character, who already has a specific animator tree,..." alt="" coords="612,765,789,792"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="550,776,612,776,612,781,550,781"/>
+<area shape="rect" id="Node000033" href="$class_l_u_t_state.html" title=" " alt="" coords="444,1044,521,1071"/>
+<area shape="poly" id="edge33_Node000032_Node000033" title=" " alt="" coords="300,1075,443,1059,444,1064,301,1081"/>
+<area shape="rect" id="Node000034" href="$class_root_state.html" title=" " alt="" coords="442,1095,523,1121"/>
+<area shape="poly" id="edge34_Node000032_Node000034" title=" " alt="" coords="301,1085,442,1101,442,1106,300,1090"/>
 </map>

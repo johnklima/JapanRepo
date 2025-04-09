@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['target_0',['Target',['../class_follow_camera.html#af50eb1fdeae6901757beac5c25d1add3',1,'FollowCamera.Target'],['../class_character_navigator.html#aecc5b87bf96dd5afbf559fb872f9eb41',1,'CharacterNavigator.Target'],['../class_doppleganger.html#ac62720eca92041bbbfab7f4e0838bada',1,'Doppleganger.Target'],['../class_vision_cone.html#a76ef657403e91600340d2cf567824127',1,'VisionCone.Target']]],
-  ['typeofperson_1',['typeOfPerson',['../class_person.html#a794a04df28f7239718ef38391522d361',1,'Person']]]
+  ['results_0',['results',['../class_l_u_t_state.html#ae1e18d77e5f20ce6dcfd9afa99c98962',1,'LUTState']]],
+  ['resulttable_1',['resultTable',['../class_base_interaction.html#a55064f116eceffecabc4d79edd62192c',1,'BaseInteraction.resultTable'],['../class_l_u_t.html#a446c7382b17a3bf46c74405a25254366',1,'LUT.resultTable']]],
+  ['row_2',['row',['../class_l_u_t_state.html#a6711e67c1e2c5af32183bee5af102358',1,'LUTState']]],
+  ['rows_3',['rows',['../class_l_u_t.html#a05fff3af5a1c4255ccf258f8545cfadb',1,'LUT']]]
 ];

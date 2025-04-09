@@ -1,0 +1,11 @@
+<map id="CharacterMarkerHandler" name="CharacterMarkerHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="39,263,202,289"/>
+<area shape="rect" id="Node000002" href="$class_audio_timeline_marker_handler.html" title=" " alt="" coords="5,81,194,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,123,122,262,117,263,100,124"/>
+<area shape="rect" id="Node000004" href="$class_script_usage_timeline.html" title=" " alt="" coords="136,172,279,199"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="128,116,194,169,190,173,125,120"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,5,220,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,45,113,83,109,79,142,42"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="188,43,209,80,215,105,216,131,213,172,207,171,211,130,210,106,204,82,183,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,212,135,264,131,260,183,208"/>
+</map>

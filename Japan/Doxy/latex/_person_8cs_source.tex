@@ -1,0 +1,54 @@
+\doxysection{Person.\+cs}
+\hypertarget{_person_8cs_source}{}\label{_person_8cs_source}\index{C:/JapanRepo/Japan/Assets/Scripts/Character/Person.cs@{C:/JapanRepo/Japan/Assets/Scripts/Character/Person.cs}}
+\mbox{\hyperlink{_person_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00014}\mbox{\hyperlink{class_person}{00014}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_person}{Person}}\ :\ \mbox{\hyperlink{class_mammal}{Mammal}}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00017}\mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{typeOfPerson}}\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//there\ are\ 7\ types\ of\ person\ in\ japan\ world}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00018}00018\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ curPersonType\ =\ 0;\ \ \ \ \ \ \textcolor{comment}{//something\ I\ will\ likely\ save\ to\ a\ json\ file}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00019}\mbox{\hyperlink{class_person_acd46477f12b716b86cae18ddfc225976}{00019}}\ \ \ \ \ \textcolor{keyword}{public}\ Transform\ \mbox{\hyperlink{class_person_acd46477f12b716b86cae18ddfc225976}{PersonTypes}};}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00021}00021\ \ \ \ \ \textcolor{comment}{//\ Start\ is\ called\ before\ the\ first\ frame\ update}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ Start()}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00023}00023\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ changePersonType(\mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{typeOfPerson}});}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00029}00029\ \ \ \ \ \textcolor{comment}{//\ Update\ is\ called\ once\ per\ frame}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{void}\ Update()}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00031}00031\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//should\ not\ a\ person\ be\ able\ to\ change?}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{typeOfPerson}}\ !=\ curPersonType)}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ changePersonType(\mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{typeOfPerson}});}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{void}\ changePersonType(\textcolor{keywordtype}{int}\ \_type)}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//given\ person\ type\ (random?)\ enable\ the\ model}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//first\ turn\ them\ all\ off}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00046}00046\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Transform\ \_person\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_person_acd46477f12b716b86cae18ddfc225976}{PersonTypes}})\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \_person.gameObject.SetActive(\textcolor{keyword}{false});\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//enable\ the\ one,\ and\ buffer\ it\ should\ I\ need\ to\ know\ previous\ type\ (often\ the\ case)}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_person_acd46477f12b716b86cae18ddfc225976}{PersonTypes}}.GetChild(\_type).gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ curPersonType\ =\ \mbox{\hyperlink{class_person_a794a04df28f7239718ef38391522d361}{typeOfPerson}}\ =\ \_type;}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_person_8cs_source_l00061}00061\ \}}
+
+\end{DoxyCode}
