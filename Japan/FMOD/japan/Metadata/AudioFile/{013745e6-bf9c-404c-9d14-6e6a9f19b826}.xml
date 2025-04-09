@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{013745e6-bf9c-404c-9d14-6e6a9f19b826}">
+		<property name="assetPath">
+			<value>104316__proxima4__high-mountain.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>58.909083333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{414d331c-a7ed-41e6-87a9-9f6c293f6221}</destination>
+		</relationship>
+	</object>
+</objects>

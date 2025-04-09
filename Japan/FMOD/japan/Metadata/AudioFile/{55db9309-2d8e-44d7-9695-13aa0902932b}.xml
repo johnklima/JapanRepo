@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{55db9309-2d8e-44d7-9695-13aa0902932b}">
+		<property name="assetPath">
+			<value>503225__phonosupf__guitar-sequence-3.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.591111111111111</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{414d331c-a7ed-41e6-87a9-9f6c293f6221}</destination>
+		</relationship>
+	</object>
+</objects>

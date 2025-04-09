@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class CharacterMarkerHandler : AudioTimelineMarkerHandler
 {
-
-    public ScriptUsageTimeline usageTimeline;
-    public FMODUnity.StudioEventEmitter emitter;
+   
 
     //Depending on usage, we may wish to autostart. If a sound emmiter has a trigger, 
     //a oneshot for example, we probably dont want to autostart
@@ -28,6 +26,7 @@ public class CharacterMarkerHandler : AudioTimelineMarkerHandler
     {
         if(initAtStart && usageTimeline && emitter)
         {
+            emitter.Play();
             usageTimeline.StartTimeline(emitter);
         }
         else if(initAtStart)
